@@ -1,24 +1,21 @@
 <template>
   <div class="container">
-    <partial-header title="Home"></partial-header>
+    <partial-header title="Contact"></partial-header>
     <div class="main">
       <partial-sidebar></partial-sidebar>
       <div class="main-container">
         <div class="main-area">
-          <email-title subject="Welcome to my site!" title="Home"></email-title>
+          <email-title subject="What can I help you with?" title="Contact"></email-title>
           <div class="main-content">
             <email-header></email-header>
             <p>
               Hi friend,
             </p>
             <p>
-              Welcome to my website!
+              Please send me a message below and I will get back to you shortly. The more info you can provide the better!
             </p>
             <p>
-              I am a software developer and consultant based in Los Angeles. Please have a look around to get to know me a bit better, and if you'd like to get in touch regarding either a potential engagement or cute puppy pics/videos, <a href="/#/contact">please shoot me a message</a>.
-            </p>
-            <p>
-              Cheers,
+              Thanks,
             </p>
             <p>
               Nate
@@ -37,7 +34,7 @@ import EmailTitle from './EmailTitle'
 import EmailHeader from './EmailHeader'
 
 export default {
-  name: 'home',
+  name: 'contact',
   components: { PartialHeader, PartialSidebar, EmailTitle, EmailHeader
   },
   data: function () {
@@ -69,6 +66,7 @@ export default {
   border-bottom: 1px solid #e5e5e5;
   font-size: 12.8px;
   margin: 0px 30px 0px 10px;
+  width: 100%;
 }
 .main-content a {
   color: #0000EE;

@@ -35,6 +35,9 @@ time, mark, audio, video {
  vertical-align:baseline;
  background:transparent;
 }
+a {
+  text-decoration: none;
+}
 #app {
   font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
   -webkit-font-smoothing: antialiased;
