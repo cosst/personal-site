@@ -2,7 +2,9 @@
   <div class="container">
     <partial-header title="Contact"></partial-header>
     <div class="main">
-      <partial-sidebar></partial-sidebar>
+      <div class="sidebar-toggle">
+        <partial-sidebar></partial-sidebar>
+      </div>
       <div class="main-container">
         <div class="main-area">
           <email-title subject="What can I help you with?" title="Contact"></email-title>
@@ -20,6 +22,27 @@
             <p>
               Nate
             </p>
+          </div>
+          <div class="contact-form-container">
+            <div class="contact-form-body">
+              <form action="#">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Jenny">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Tutone">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="jenny867@gmail.com">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Can you please stop giving people my number?" style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -51,25 +74,41 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.main {
-  display: flex;
-  width: 100%;
-}
-.main-container {
-  width: auto;
-}
-.main-area {
-  text-align: left;
-}
-.main-content {
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
+input[type=text], input[type=email], textarea {
+  border: 1px solid rgba(0,0,0,0.15);
   font-size: 12.8px;
-  margin: 0px 30px 0px 10px;
+  margin: 8px 0px;
+  padding: 10px;
   width: 100%;
 }
-.main-content a {
-  color: #0000EE;
+input[type=submit] {
+  background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+  height: 30px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+label {
+  font-size: 14px;
+}
+p {
+  margin: 15px 32.5px;
+  width: 80%;
+}
+.contact-form-body {
+  margin: 0 auto;
+  width: 80%;
+}
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px 30px 0px;
+  width: 100%;
 }
 .container {
   background-color: white;
@@ -91,58 +130,32 @@ export default {
   color: grey;
   padding: 2px;
 }
-.page {
-  background-color: white;
-  border: 1px solid black;
-  max-width: 900px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.main {
+  display: flex;
+  width: 100%;
 }
-.page-text {
-  padding: 50px;
-}
-.summary-text {
-  margin-bottom: 10px;
+.main-area {
   text-align: left;
 }
-h1 {
-  font-size: 17.6px;
-  font-stretch: 100%;
-  font-weight: 400;
+.main-container {
+  width: auto;
 }
-ul {
-  padding: 0;
+.main-content {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 12.8px;
+  margin: 0px 30px 0px 10px;
+  width: 100%;
 }
-li {
-  margin: 0 10px;
+.main-content a {
+  color: #0000EE;
 }
-a {
-  color: black;
-  text-decoration: none;
-}
-
-p {
-  margin: 15px 32.5px;
-  width: 80%;
-}
-@media only screen and (max-width: 900px)  {
-  .page {
-    border: none;
-    margin-top: 0px;
-    margin-bottom: 0px;
+@media only screen and (max-width: 800px)  {
+  input[type=text], input[type=email], textarea {
+    width: 95%;
   }
-  .page-text {
-    padding: 20px;
-  }
-}
-@media only screen and (max-width: 460px)  {
-  h1 {
-    font-size: 45px;
-  }
-}
-@media only screen and (max-width: 400px)  {
-  h1 {
-    font-size: 40px;
+  .sidebar-toggle {
+    display: none;
   }
 }
 </style>

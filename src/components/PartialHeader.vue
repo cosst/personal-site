@@ -20,26 +20,58 @@
     <div class="menu-container">
       <div class="menu-mail">
         Menu <i class="fas fa-caret-down small-caret"></i>
+             <i class="fas fa-caret-right small-caret"></i>
       </div>
       <div class="menu-middle">
-        <div class="menu-icon">
+        <div class="menu-icon social-wide-screen-icon">
           <a href="https://www.linkedin.com/in/nateschier/" target="_blank">
             <i class="fab fa-linkedin-in"></i>
           </a>
         </div>
-        <div class="menu-icon">
+        <div class="menu-icon social-wide-screen-icon">
           <a href="https://twitter.com/ntschier" target="_blank">
             <i class="fab fa-twitter"></i>
           </a>
         </div>
-        <div class="menu-icon">
+        <div class="menu-icon social-wide-screen-icon">
           <a href="https://www.instagram.com/ntschier/" target="_blank">
             <i class="fab fa-instagram"></i>
           </a>
         </div>
+        <div class="menu-icon social-med-screen-icon">
+          <a href="/#/">
+            <i class="fas fa-home"></i>
+          </a>
+        </div>
+        <div class="menu-icon social-med-screen-icon">
+          <a href="/#/resume">
+            <i class="fas fa-file-alt"></i>
+          </a>
+        </div>
+        <div class="menu-icon social-med-screen-icon">
+          <a href="/#/work">
+            <i class="fas fa-archive"></i>
+          </a>
+        </div>
+        <div class="menu-icon social-med-screen-icon">
+          <a href="/#/blog">
+            <i class="fas fa-lightbulb"></i>
+          </a>
+        </div>
+        <div class="menu-icon social-med-screen-icon">
+          <a href="/#/daphne">
+            <i class="fas fa-paw"></i>
+          </a>
+        </div>
+        <div class="menu-icon social-med-screen-icon">
+          <a href="/#/contact">
+            <i class="fas fa-envelope-square"></i>
+          </a>
+        </div>
+
       </div>
       <div class="menu-right">
-        <div class="menu-icon">
+        <div class="menu-icon social-wide-screen-icon">
           <a href="https://github.com/cosst" target="_blank">
             <i class="fab fa-github-alt"></i>
           </a>
@@ -63,6 +95,62 @@ export default {
   background-color: #f1f1f1;
   height: 60px;
   width: 100%;
+}
+@media only screen and (max-width: 800px)  {
+  .fa-caret-down {
+    display: none;
+  }
+  .header {
+    display: none;
+  }
+  .main-content {
+    margin-left: 8px;
+  }
+  .menu-icon {
+    display: inline-block;
+  }
+  .menu-mail {
+    margin-left: -30px;
+    width: 66px;
+  }
+  .menu-right {
+    display: none
+  }
+  .social-wide-screen-icon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 499px) {
+  .menu-icon {
+    width: 24px;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .menu-icon {
+    width: 34px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .menu-icon {
+    width: 44px;
+  }
+}
+@media only screen and (min-width: 801px) {
+  .fa-caret-right {
+    display: none;
+  }
+  .menu-icon {
+    width: 54px
+  }
+  .menu-mail {
+    width: 166px;
+  }
+  .social-med-screen-icon {
+    display: none;
+  }
+  .social-wide-screen-icon {
+    display: inline-block;
+  }
 }
 .header-container {
   display: flex;
@@ -133,13 +221,11 @@ export default {
   border: 1px solid rgba(0,0,0,0.1);
   border-radius: 2px;
   color: #444;
-  display: inline-block;
   height: 27px;
   line-height: 27px;
   margin-right: 10px;
   padding: 0px 8px;
   text-align: center;
-  width: 54px;
 }
 .menu-icon a {
   color: #444; 
@@ -150,7 +236,6 @@ export default {
   line-height: 29px;
   text-align: left;
   text-shadow: none;
-  width: 166px;
 }
 .menu-middle {
   flex-grow: 1;
@@ -179,5 +264,18 @@ export default {
 }
 .top-container {
   width: 100%;
+}
+@media only screen and (max-width: 414px) {
+  .menu-bar {
+    padding: 5px 12px;
+  }
+  .menu-mail {
+    display: none;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .menu-icon {
+    width: 18px;
+  }
 }
 </style>

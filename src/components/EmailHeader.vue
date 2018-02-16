@@ -50,4 +50,9 @@ h2 {
   text-align: center;
   width: 22px;
 }
+@media only screen and (max-width: 525px) {
+  .email-header {
+    display: none;
+  }
+}
 </style>

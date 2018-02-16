@@ -2,7 +2,9 @@
   <div class="container">
     <partial-header title="Home"></partial-header>
     <div class="main">
-      <partial-sidebar></partial-sidebar>
+      <div class="sidebar-toggle">
+        <partial-sidebar></partial-sidebar>
+      </div>
       <div class="main-container">
         <div class="main-area">
           <email-title subject="Welcome to my site!" title="Home"></email-title>
@@ -16,6 +18,17 @@
             </p>
             <p>
               I am a software developer and consultant based in Los Angeles. Please have a look around to get to know me a bit better, and if you'd like to get in touch regarding either a potential engagement or cute puppy pics/videos, <a href="/#/contact">please shoot me a message</a>.
+            </p>
+            <div class="home-site-menu">
+              Site Menu:
+              <ul>
+                <a href="/#/resume" v-on:click="setActive('resume')" :class="{ active: isActive('resume') }"><li>Resume</li></a>
+                <a href="#"><li>Work</li></a>
+                <a href="#"><li>Blog</li></a>
+                <a href="#"><li>Daphne</li></a>
+                <a href="/#/contact"><li>Contact</li></a>
+              </ul>
+            </div>
             </p>
             <p>
               Cheers,
@@ -41,12 +54,14 @@ export default {
   components: { PartialHeader, PartialSidebar, EmailTitle, EmailHeader
   },
   data: function () {
-    return {
-      selfStudy: [
-        {bullet: "Focus primarily on full-stack JavaScript and more specifically React & Node"},
-        {bullet: "Learn through a mix of my own projects, tutorials, online reading, and contributing to open source"},
-        {bullet: "Enrolled in Harvard’s CS50x to build foundational CS knowledge; estimated completion: February 2018"}
-      ]
+    return { activeItem: 'home' }
+  },
+  methods: {
+    isActive: function (menuItem) {
+      return this.activeItem === menuItem
+    },
+    setActive: function (menuItem) {
+      this.activeItem = menuItem
     }
   }
 }
@@ -93,6 +108,16 @@ export default {
   color: grey;
   padding: 2px;
 }
+.home-site-menu {
+  margin-left: 32px;
+}
+.home-site-menu ul {
+  margin: 5px 15px 5px 0px;
+}
+.home-site-menu li {
+  margin-left: 30px;
+  padding: 5px 5px;
+}
 .page {
   background-color: white;
   border: 1px solid black;
@@ -102,6 +127,11 @@ export default {
 }
 .page-text {
   padding: 50px;
+}
+@media only screen and (max-width: 800px)  {
+  .sidebar-toggle {
+    display: none;
+  }
 }
 .summary-text {
   margin-bottom: 10px;

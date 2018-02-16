@@ -2,7 +2,9 @@
   <div class="container">
     <partial-header title="Resume"></partial-header>
     <div class="main">
-      <partial-sidebar></partial-sidebar>
+      <div class="sidebar-toggle">
+        <partial-sidebar></partial-sidebar>
+      </div>
         <div class="resume-container">
           <div class="download-resume">
             <a href="../assets/nate-schier-resume.pdf" download>
@@ -96,6 +98,7 @@ export default {
   },
   data: function () {
     return {
+      activeItem: 'resume',
       selfStudy: [
         {bullet: "Focus primarily on full-stack JavaScript and more specifically React & Node"},
         {bullet: "Learn through a mix of my own projects, tutorials, online reading, and contributing to open source"},
@@ -138,6 +141,14 @@ export default {
         {title: "Skills", skill: ": scrappiness, autodidacticism, listening, leadership, empathy, pattern recognition, mnemonic memory, dog whispering"},
         {title: "Interests", skill: ": my dog Daphne, NYT Crosswords, downtown LA, Mad Men, topographical maps, NY-style pizza, rugby, Hawaii"}
       ]
+    }
+  },
+  methods: {
+    isActive: function (menuItem) {
+      return this.activeItem === menuItem
+    },
+    setActive: function (menuItem) {
+      this.activeItem = menuItem
     }
   }
 }
@@ -228,6 +239,11 @@ a {
 @media only screen and (max-width: 400px)  {
   h1 {
     font-size: 40px;
+  }
+}
+@media only screen and (max-width: 800px)  {
+  .sidebar-toggle {
+    display: none;
   }
 }
 </style>

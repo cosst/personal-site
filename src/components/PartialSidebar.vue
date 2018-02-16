@@ -21,8 +21,8 @@
               <i class="fas fa-caret-down"></i>&nbsp;&nbsp;Navigate
             </div>
               <ul>
-                <a href="/#/"><li>Home</li></a>
-                <a href="/#/resume"><li>Resume</li></a>
+                <a href="/#/" v-on:click="setActive('home')" :class="{ active: isActive('home') }"><li>Home</li></a>
+                <a href="/#/resume" v-on:click="setActive('resume')" :class="{ active: isActive('resume') }"><li>Resume</li></a>
                 <a href="#"><li>Work</li></a>
                 <a href="#"><li>Blog</li></a>
                 <a href="#"><li>Daphne</li></a>
@@ -90,7 +90,15 @@
 <script>
 export default {
   name: 'partial-sidebar',
-  props: ['title']
+  props: ['title'],
+  methods: {
+    isActive: function (menuItem) {
+      return this.activeItem === menuItem
+    },
+    setActive: function (menuItem) {
+      this.activeItem = menuItem
+    }
+  }
 }
 </script>
 
@@ -229,6 +237,9 @@ export default {
 .nav-menu a {
   color: black;
   text-decoration: none;
+}
+.nav-menu a:active {
+  color: #dd4b39;
 }
 .nav-menu li:hover {
   background-color: #f1f1f1;

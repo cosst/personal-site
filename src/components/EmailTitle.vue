@@ -25,6 +25,8 @@ export default {
 }
 .email-title h1 {
   display: inline-block;
+  font-size: 17.6px;
+  font-weight: 400;
 }
 .email-title-tag {
   background-color: rgb(221, 221, 221);
