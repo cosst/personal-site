@@ -23,9 +23,9 @@
               <ul>
                 <a href="/#/" v-on:click="setActive('home')" :class="{ active: isActive('home') }"><li>Home</li></a>
                 <a href="/#/resume" v-on:click="setActive('resume')" :class="{ active: isActive('resume') }"><li>Resume</li></a>
-                <a href="#"><li>Work</li></a>
-                <a href="#"><li>Blog</li></a>
-                <a href="#"><li>Daphne</li></a>
+                <a href="/#/work"><li>Work</li></a>
+                <a href="/#/blog"><li>Blog</li></a>
+                <a href="/#/daphne"><li>Daphne</li></a>
                 <a href="/#/contact"><li>Contact</li></a>
               </ul>
           </div>
@@ -91,6 +91,9 @@
 export default {
   name: 'partial-sidebar',
   props: ['title'],
+  data: function () {
+    return { activeItem: 'home' }
+  },
   methods: {
     isActive: function (menuItem) {
       return this.activeItem === menuItem

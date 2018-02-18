@@ -47,18 +47,20 @@
         </div>
       </div>
     </div>
+    <partial-footer></partial-footer>
   </div>
 </template>
 
 <script>
 import PartialHeader from './PartialHeader'
 import PartialSidebar from './PartialSidebar'
+import PartialFooter from './PartialFooter'
 import EmailTitle from './EmailTitle'
 import EmailHeader from './EmailHeader'
 
 export default {
   name: 'contact',
-  components: { PartialHeader, PartialSidebar, EmailTitle, EmailHeader
+  components: { PartialHeader, PartialSidebar, PartialFooter, EmailTitle, EmailHeader
   },
   data: function () {
     return {
@@ -145,7 +147,7 @@ p {
   border-bottom: 1px solid #e5e5e5;
   font-size: 12.8px;
   margin: 0px 30px 0px 10px;
-  width: 100%;
+  width: 95%;
 }
 .main-content a {
   color: #0000EE;

@@ -21,6 +21,7 @@ export default {
   line-height: 35px;
   margin: 0px 8px;
   padding: 6px 5px;
+  text-align: left;
   width: 95%;
 }
 .email-title h1 {

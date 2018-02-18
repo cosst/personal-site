@@ -204,7 +204,8 @@ export default {
 }
 .menu-bar {
   background-color: white;
-  border: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   height: 40px;
   padding: 5px 43px;
   width: 100%;
@@ -229,6 +230,9 @@ export default {
 }
 .menu-icon a {
   color: #444; 
+}
+.menu-icon a:hover {
+  color: #4683ea;
 }
 .menu-mail {
   color: #dd4b39;
@@ -263,6 +267,7 @@ export default {
   font-size: 0.65em;
 }
 .top-container {
+  overflow: hidden;
   width: 100%;
 }
 @media only screen and (max-width: 414px) {

@@ -23,9 +23,9 @@
               Site Menu:
               <ul>
                 <a href="/#/resume" v-on:click="setActive('resume')" :class="{ active: isActive('resume') }"><li>Resume</li></a>
-                <a href="#"><li>Work</li></a>
-                <a href="#"><li>Blog</li></a>
-                <a href="#"><li>Daphne</li></a>
+                <a href="/#/work"><li>Work</li></a>
+                <a href="/#/blog"><li>Blog</li></a>
+                <a href="/#/daphne"><li>Daphne</li></a>
                 <a href="/#/contact"><li>Contact</li></a>
               </ul>
             </div>
@@ -40,18 +40,20 @@
         </div>
       </div>
     </div>
+    <partial-footer></partial-footer>
   </div>
 </template>
 
 <script>
 import PartialHeader from './PartialHeader'
 import PartialSidebar from './PartialSidebar'
+import PartialFooter from './PartialFooter'
 import EmailTitle from './EmailTitle'
 import EmailHeader from './EmailHeader'
 
 export default {
   name: 'home',
-  components: { PartialHeader, PartialSidebar, EmailTitle, EmailHeader
+  components: { PartialHeader, PartialSidebar, PartialFooter, EmailTitle, EmailHeader
   },
   data: function () {
     return { activeItem: 'home' }

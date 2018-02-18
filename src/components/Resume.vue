@@ -6,6 +6,9 @@
         <partial-sidebar></partial-sidebar>
       </div>
         <div class="resume-container">
+          <email-title subject="The ol' Curriculum Vitae" title="Resume"></email-title>
+          <div class="resume-top-border">
+          </div>
           <div class="download-resume">
             <a href="../assets/nate-schier-resume.pdf" download>
               <i class="fas fa-cloud-download-alt"></i>
@@ -77,12 +80,15 @@
           </div>
         </div>
     </div>
+    <partial-footer></partial-footer>
   </div>
 </template>
 
 <script>
 import PartialHeader from './PartialHeader'
 import PartialSidebar from './PartialSidebar'
+import PartialFooter from './PartialFooter'
+import EmailTitle from './EmailTitle'
 import SectionHeader from './SectionHeader'
 import CompanyLocationHeader from './CompanyLocationHeader'
 import PositionDatesHeader from './PositionDatesHeader'
@@ -94,7 +100,7 @@ import PositionBulletsUl from './PositionBulletsUl'
 
 export default {
   name: 'resume',
-  components: { PartialHeader, PartialSidebar, SectionHeader, CompanyLocationHeader, PositionDatesHeader, PositionBullets, EducationBullets, SkillsAndInterests, AwardsBullets, PositionBulletsUl
+  components: { PartialHeader, PartialSidebar, PartialFooter, EmailTitle, SectionHeader, CompanyLocationHeader, PositionDatesHeader, PositionBullets, EducationBullets, SkillsAndInterests, AwardsBullets, PositionBulletsUl
   },
   data: function () {
     return {
@@ -159,6 +165,11 @@ export default {
 .download-resume {
   margin: 10px 0px auto;
 }
+.resume-top-border {
+  border-top: 1px solid #e5e5e5;
+  margin-left: 10px;
+  width: 96%;
+}
 .main {
   display: flex;
   width: 100%;
@@ -221,7 +232,7 @@ a {
   color: black;
   text-decoration: none;
 }
-@media only screen and (max-width: 900px)  {
+@media only screen and (max-width: 1105px)  {
   .page {
     border: none;
     margin-top: 0px;
@@ -239,6 +250,9 @@ a {
 @media only screen and (max-width: 400px)  {
   h1 {
     font-size: 40px;
+  }
+  .heading-text {
+    font-size: 12px;
   }
 }
 @media only screen and (max-width: 800px)  {
