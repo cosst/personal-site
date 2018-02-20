@@ -272,15 +272,25 @@ export default {
 }
 @media only screen and (max-width: 414px) {
   .menu-bar {
-    padding: 5px 12px;
+    padding: 5px 0px;
   }
   .menu-mail {
     display: none;
+  }
+  .menu-middle {
+    margin-left: 10px;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 340px) {
   .menu-icon {
     width: 18px;
+  }
+}
+@media only screen and (max-width: 800px)  {
+  .menu-bar {
+    border-top: none;
+    position: fixed;
   }
 }
 </style>

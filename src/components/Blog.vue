@@ -193,7 +193,7 @@ import EmailTitle from './EmailTitle'
 import EmailHeader from './EmailHeader'
 
 export default {
-  name: 'home',
+  name: 'blog',
   components: { PartialHeader, PartialSidebar, PartialFooter, EmailTitle, EmailHeader
   },
   data: function () {
@@ -263,7 +263,6 @@ export default {
   border-top: 1px solid #e5e5e5;
   font-size: 12.8px;
   margin: 0px 30px 0px 10px;
-  width: 95%;
 }
 .main-content a {
   color: #0000EE;

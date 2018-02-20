@@ -168,7 +168,7 @@ export default {
 .resume-top-border {
   border-top: 1px solid #e5e5e5;
   margin-left: 10px;
-  width: 96%;
+  width: 97%;
 }
 .main {
   display: flex;

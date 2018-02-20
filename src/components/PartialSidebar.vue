@@ -33,8 +33,8 @@
             <ul>
               <li>Apartments</li>
               <li>Events</li>
+              <li>Family & Friends</li>
               <li>Flights & Travel</li>
-              <li>Friends & Family</li>
               <li>Medical</li>
               <li>Newsletters</li>
               <li>Pomona</li>

@@ -76,7 +76,7 @@ export default {
   width: 100%;
 }
 .main-container {
-  width: auto;
+  width: 100%;
 }
 .main-area {
   text-align: left;

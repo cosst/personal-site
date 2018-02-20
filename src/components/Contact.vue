@@ -140,14 +140,13 @@ p {
   text-align: left;
 }
 .main-container {
-  width: auto;
+  width: 100%;
 }
 .main-content {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
   font-size: 12.8px;
   margin: 0px 30px 0px 10px;
-  width: 95%;
 }
 .main-content a {
   color: #0000EE;
