@@ -66,7 +66,7 @@ p {
   text-align: left;
 }
 .main-container {
-  width: auto;
+  width: 100%;
 }
 .main-content {
   border-top: 1px solid #e5e5e5;
