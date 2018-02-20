@@ -6,8 +6,11 @@
         <h1>Nate Schier - {{ title }}</h1>
       </div>
       <div class="header-search">
-        <input type="text" name="q">
-        <button class="search-button"><i class="fas fa-search"></i></button>
+        <form action="https://www.google.com/search" method="get" target="_blank">
+          <input name="sitesearch" type="hidden" value="reddit.com">
+          <input name="q" type="text">
+          <button class="search-button"><i class="fas fa-search"></i></button>
+        </form>
       </div>
       <div class="header-logo">
         <a href="/#/">
@@ -195,12 +198,19 @@ export default {
 .header-search input {
   border: 1px solid rgba(0,0,0,0.15);
   display: inline-block;
+  font-family: arial,sans-serif;
+  font-size: 16px;
   height: 28px;
   margin-left: 25px;
   margin-right: -5px;
-  padding-top: 1px;
+  margin-top: 1px;
+  padding: 0px 10px;
   max-width: 590px;
   width: 80%;
+}
+.header-search input:focus {
+  border: 1px solid #4285f4;
+  outline: none;
 }
 .menu-bar {
   background-color: white;
