@@ -69,7 +69,8 @@ module.exports = {
         test: /\.(pdf)(\?.*)?$/,
         loader: 'url-loader',
         options: {
-          name: utils.assetsPath('pdfs/[name].[hash:7].[ext]')
+          limit: 10000,
+          name: utils.assetsPath('[name].[hash:7].[ext]')
         }
       }
     ]
