@@ -10,7 +10,7 @@
           <div class="resume-top-border">
           </div>
           <div class="download-resume">
-            <a href="../static/nate-schier-resume.pdf" download>
+            <a href="/static/nate-schier-resume.pdf" download>
               <i class="fas fa-cloud-download-alt"></i>
               Download PDF Resume
             </a>
