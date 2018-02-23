@@ -1,3 +1,5 @@
+var data = new Date().getHours();
+
 <template>
   <div class="email-header">
     <div class="user-icon">
@@ -6,8 +8,8 @@
     <div class="email-info">
       <h2>Nate Schier</h2> &lt;nathaniel.schier@email.com&gt;
     </div>
-    <div class="right-text">
-      11:19 AM (0 minutes ago)
+    <div id="email-time" class="right-text">
+      {{ getEmailHours }}:{{ minutes }} {{ getAmPm }} (0 minutes ago)
     </div>
   </div>
 </template>
@@ -15,7 +17,34 @@
 <script>
 export default {
   name: 'email-header',
-  props: ['subject', 'title']
+  props: ['subject', 'title'],
+  data: function () {
+    return {
+      hours: new Date().getHours(),
+      minutes: new Date().getMinutes()
+    }
+  },
+  computed: {
+    getEmailHours: function() {
+      if (this.hours > 12) {
+        return this.hours - 12;
+      }
+      else if (this.hours == 0) {
+        return 12;
+      }
+      else {
+        return this.hours;
+      }
+    },
+    getAmPm: function() {
+      if (this.hours > 11) {
+        return 'PM';
+      }
+      else {
+        return 'AM';
+      }
+    }
+  }
 }
 </script>
 
