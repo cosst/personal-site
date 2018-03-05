@@ -13,7 +13,7 @@
         </form>
       </div>
       <div class="header-logo">
-        <a href="/#/">
+        <a href="/">
           <span class="header-logo-image"></span>
         </a>
       </div>
@@ -42,32 +42,32 @@
           </a>
         </div>
         <div class="menu-icon social-med-screen-icon">
-          <a href="/#/">
+          <a href="/">
             <i class="fas fa-home"></i>
           </a>
         </div>
         <div class="menu-icon social-med-screen-icon">
-          <a href="/#/resume">
+          <a href="/resume">
             <i class="fas fa-file-alt"></i>
           </a>
         </div>
         <div class="menu-icon social-med-screen-icon">
-          <a href="/#/work">
+          <a href="/work">
             <i class="fas fa-archive"></i>
           </a>
         </div>
         <div class="menu-icon social-med-screen-icon">
-          <a href="/#/blog">
+          <a href="/blog">
             <i class="fas fa-lightbulb"></i>
           </a>
         </div>
         <div class="menu-icon social-med-screen-icon">
-          <a href="/#/daphne">
+          <a href="/daphne">
             <i class="fas fa-paw"></i>
           </a>
         </div>
         <div class="menu-icon social-med-screen-icon">
-          <a href="/#/contact">
+          <a href="/contact">
             <i class="fas fa-envelope-square"></i>
           </a>
         </div>
@@ -153,6 +153,9 @@ export default {
   }
   .social-wide-screen-icon {
     display: inline-block;
+  }
+  .top-container {
+    position: fixed;
   }
 }
 .header-container {

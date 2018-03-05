@@ -311,4 +311,12 @@ a {
     width: 30%;
   }
 }
+@media only screen and (min-width: 801px)  {
+  .main {
+    margin-top: 112px;
+  }
+  .main-container {
+    margin-left: 212px;
+  }
+}
 </style>

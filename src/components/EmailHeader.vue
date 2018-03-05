@@ -1,5 +1,3 @@
-var data = new Date().getHours();
-
 <template>
   <div class="email-header">
     <div class="user-icon">
@@ -9,7 +7,7 @@ var data = new Date().getHours();
       <h2>Nate Schier</h2> &lt;nathaniel.schier@email.com&gt;
     </div>
     <div id="email-time" class="right-text">
-      {{ getEmailHours }}:{{ minutes }} {{ getAmPm }} (0 minutes ago)
+      {{ getEmailHours }}:{{ getEmailMinutes }} {{ getAmPm }} (0 minutes ago)
     </div>
   </div>
 </template>
@@ -34,6 +32,14 @@ export default {
       }
       else {
         return this.hours;
+      }
+    },
+    getEmailMinutes: function() {
+      if (this.minutes < 10) {
+        return '0' + this.minutes;
+      }
+      else {
+        return this.minutes;
       }
     },
     getAmPm: function() {

@@ -260,4 +260,12 @@ a {
     display: none;
   }
 }
+@media only screen and (min-width: 801px)  {
+  .main {
+    margin-top: 112px;
+  }
+  .resume-container {
+    margin-left: 212px;
+  }
+}
 </style>

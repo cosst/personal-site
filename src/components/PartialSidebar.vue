@@ -21,12 +21,12 @@
               <i class="fas fa-caret-down"></i>&nbsp;&nbsp;Navigate
             </div>
               <ul>
-                <a href="/#/" v-on:click="setActive('home')" :class="{ active: isActive('home') }"><li>Home</li></a>
-                <a href="/#/resume" v-on:click="setActive('resume')" :class="{ active: isActive('resume') }"><li>Resume</li></a>
-                <a href="/#/work"><li>Work</li></a>
-                <a href="/#/blog"><li>Blog</li></a>
-                <a href="/#/daphne"><li>Daphne</li></a>
-                <a href="/#/contact"><li>Contact</li></a>
+                <router-link to="/" exact tag="li">Home</router-link>
+                <router-link to="resume" tag="li">Resume</router-link>
+                <router-link to="work" tag="li">Work</router-link>
+                <router-link to="blog" tag="li">Blog</router-link>
+                <router-link to="daphne" tag="li">Daphne</router-link>
+                <router-link to="contact" tag="li">Contact</router-link>
               </ul>
           </div>
           <div class="nav-fake">
@@ -218,11 +218,13 @@ export default {
 .folders {
   margin-top: -10px;
 }
+
 .folders li {
   height: 16px;
-  margin: 0px -10px;
+  margin: 0px -10px 0px;
   padding: 1px 20px;
 }
+
 .folders ul {
   font-size: 12.8px;
   list-style-type: none;
@@ -250,12 +252,19 @@ export default {
 .nav-menu li:active {
   color: #dd4b39;
 }
+.router-link-exact-active {
+  border-left: 4px solid #dd4b39;
+  color: #dd4b39;
+  margin-left: -30px !important;
+  padding-left: 35px !important;
+}
 .sidebar {
   height: 465px;
 }
 .sidebar-container {
   display: flex;
   flex-direction: column;
+  position: fixed;
   width: 202px;
 }
 </style>
