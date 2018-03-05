@@ -53,7 +53,7 @@
         </div>
         <div class="menu-icon social-med-screen-icon">
           <a href="/work">
-            <i class="fas fa-archive"></i>
+            test
           </a>
         </div>
         <div class="menu-icon social-med-screen-icon">
@@ -235,17 +235,21 @@ export default {
   border: 1px solid rgba(0,0,0,0.1);
   border-radius: 2px;
   color: #444;
+  font-weight: 700;
   height: 27px;
   line-height: 27px;
   margin-right: 10px;
   padding: 0px 8px;
   text-align: center;
 }
+.menu-icon:hover {
+  border: 1px solid #c6c6c6;
+}
 .menu-icon a {
   color: #444; 
 }
 .menu-icon a:hover {
-  color: #4683ea;
+  color: #333;
 }
 .menu-mail {
   color: #dd4b39;
