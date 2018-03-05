@@ -255,8 +255,8 @@ export default {
 .router-link-exact-active {
   border-left: 4px solid #dd4b39;
   color: #dd4b39;
-  margin-left: -30px !important;
-  padding-left: 35px !important;
+  margin-left: -33px !important;
+  padding-left: 38.5px !important;
 }
 .sidebar {
   height: 465px;

@@ -23,7 +23,7 @@
               Since then I have been studying, learning, and most importantly building things (!) to grow my own full-stack development skillset. Thus far I have focused primarily on JavaScript, and more specifically React & Node, though I am interested in expanding out from there as well. I am also working my way through Harvard's CS50 course, and I plan to continue with other online CS courses to build a solid foundation there.
             </p>
             <p>
-              Technologies that I am currently comfortable with include JavaScript, React, Vue, Node, Python, Express, MongoDB, REST APIs, Mocha, webpack, Babel, Git, Yarn/npm, Heroku, and Firebase.
+              Technologies that I am currently comfortable with include JavaScript, React, Vue, Node, Python, Express, MongoDB, RethinkDB, REST APIs, Mocha, Chai, webpack, Babel, Git, Yarn/npm, Heroku, and Firebase.
             </p>
             <p>
               While not everything I have done thus far can be shared publicly, a few projects of mine are listed below. You are welcome to view <a href="https://github.com/cosst" target="_blank">my full GitHub profile</a> as well.
