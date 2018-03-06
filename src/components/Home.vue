@@ -56,9 +56,10 @@ export default {
   components: { PartialHeader, Sidebar, PartialFooter, EmailTitle, EmailHeader
   },
   metaInfo: {
-    title: 'Home', // set a title
+    title: 'Nate Schier', // set a title
+    titleTemplate: null,
     meta: [
-      { name: 'description', content: 'this is the description for the home page'}
+      { name: 'description', content: 'I am a full stack engineer and consultant with a primary focus on JavaScript.'}
     ],
     htmlAttrs: {
       lang: 'en',

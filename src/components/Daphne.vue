@@ -100,6 +100,16 @@ import EmailHeader from './partials/EmailHeader'
 export default {
   name: 'daphne',
   components: { PartialHeader, Sidebar, PartialFooter, EmailTitle, EmailHeader
+  },
+  metaInfo: {
+    title: 'Daphne', // set a title
+    meta: [
+      { name: 'description', content: 'All about Daphne, my two year old French Mastiff and lab mix.'}
+    ],
+    htmlAttrs: {
+      lang: 'en',
+      amp: undefined // "amp" has no value
+    }
   }
 }
 </script>

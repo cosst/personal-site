@@ -102,6 +102,16 @@ export default {
   name: 'resume',
   components: { PartialHeader, Sidebar, PartialFooter, EmailTitle, SectionHeader, CompanyLocationHeader, PositionDatesHeader, PositionBullets, EducationBullets, SkillsAndInterests, AwardsBullets, PositionBulletsUl
   },
+  metaInfo: {
+    title: 'Resume', // set a title
+    meta: [
+      { name: 'description', content: 'Resume for Nate Schier, an independent full stack engineer and consultant based in Los Angeles with a primary focus on JavaScript.'}
+    ],
+    htmlAttrs: {
+      lang: 'en',
+      amp: undefined // "amp" has no value
+    }
+  },
   data: function () {
     return {
       selfStudy: [

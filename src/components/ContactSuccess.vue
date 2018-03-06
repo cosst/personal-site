@@ -43,6 +43,16 @@ import EmailHeader from './partials/EmailHeader'
 export default {
   name: 'contact-success',
   components: { PartialHeader, Sidebar, PartialFooter, EmailTitle, EmailHeader
+  },
+  metaInfo: {
+    title: 'Message Sent', // set a title
+    meta: [
+      { name: 'description', content: 'Thank you for your message. I will get back to you via email shortly.'}
+    ],
+    htmlAttrs: {
+      lang: 'en',
+      amp: undefined // "amp" has no value
+    }
   }
 }
 </script>

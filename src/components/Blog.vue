@@ -195,6 +195,16 @@ import EmailHeader from './partials/EmailHeader'
 export default {
   name: 'blog',
   components: { PartialHeader, Sidebar, PartialFooter, EmailTitle, EmailHeader
+  },
+  metaInfo: {
+    title: 'Blog', // set a title
+    meta: [
+      { name: 'description', content: 'Writings and musings by Nate Schier, an independent full stack engineer and consultant based in Los Angeles with a primary focus on JavaScript.'}
+    ],
+    htmlAttrs: {
+      lang: 'en',
+      amp: undefined // "amp" has no value
+    }
   }
 }
 </script>

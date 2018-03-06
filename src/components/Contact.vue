@@ -62,6 +62,16 @@ import EmailHeader from './partials/EmailHeader'
 export default {
   name: 'contact',
   components: { PartialHeader, Sidebar, PartialFooter, EmailTitle, EmailHeader
+  },
+  metaInfo: {
+    title: 'Contact', // set a title
+    meta: [
+      { name: 'description', content: 'Please send me a message if you would like to discuss consulting, contracting, apprenticeship, or full-time opportunities. Or if you just want to say hi.'}
+    ],
+    htmlAttrs: {
+      lang: 'en',
+      amp: undefined // "amp" has no value
+    }
   }
 }
 </script>
