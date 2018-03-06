@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Meta from 'vue-meta'
+
 import Home from '@/components/Home'
 import Resume from '@/components/Resume'
 import About from '@/components/About'
@@ -9,6 +11,7 @@ import Contact from '@/components/Contact'
 import ContactSuccess from '@/components/ContactSuccess'
 
 Vue.use(Router)
+Vue.use(Meta)
 
 export default new Router({
   mode: 'history',
@@ -16,7 +19,20 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
+      meta: {
+        title: 'About Page - Example App',
+        metaTags: [
+          {
+            name: 'description',
+            content: 'The about page of our example app.'
+          },
+          {
+            property: 'og:description',
+            content: 'The about page of our example app.'
+          }
+        ]
+      }
     },
     {
       path: '/resume',

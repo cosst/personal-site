@@ -3,7 +3,7 @@
     <partial-header title="Resume"></partial-header>
     <div class="main">
       <div class="sidebar-toggle">
-        <partial-sidebar></partial-sidebar>
+        <sidebar></sidebar>
       </div>
         <div class="resume-container">
           <email-title subject="The ol' Curriculum Vitae" title="Resume"></email-title>
@@ -85,26 +85,25 @@
 </template>
 
 <script>
-import PartialHeader from './PartialHeader'
-import PartialSidebar from './PartialSidebar'
-import PartialFooter from './PartialFooter'
-import EmailTitle from './EmailTitle'
-import SectionHeader from './SectionHeader'
-import CompanyLocationHeader from './CompanyLocationHeader'
-import PositionDatesHeader from './PositionDatesHeader'
-import PositionBullets from './PositionBullets'
-import SkillsAndInterests from './SkillsAndInterests'
-import EducationBullets from './EducationBullets'
-import AwardsBullets from './AwardsBullets'
-import PositionBulletsUl from './PositionBulletsUl'
+import PartialHeader from './partials/PartialHeader'
+import Sidebar from './partials/Sidebar'
+import PartialFooter from './partials/PartialFooter'
+import EmailTitle from './partials/EmailTitle'
+import SectionHeader from './resume/SectionHeader'
+import CompanyLocationHeader from './resume/CompanyLocationHeader'
+import PositionDatesHeader from './resume/PositionDatesHeader'
+import PositionBullets from './resume/PositionBullets'
+import SkillsAndInterests from './resume/SkillsAndInterests'
+import EducationBullets from './resume/EducationBullets'
+import AwardsBullets from './resume/AwardsBullets'
+import PositionBulletsUl from './resume/PositionBulletsUl'
 
 export default {
   name: 'resume',
-  components: { PartialHeader, PartialSidebar, PartialFooter, EmailTitle, SectionHeader, CompanyLocationHeader, PositionDatesHeader, PositionBullets, EducationBullets, SkillsAndInterests, AwardsBullets, PositionBulletsUl
+  components: { PartialHeader, Sidebar, PartialFooter, EmailTitle, SectionHeader, CompanyLocationHeader, PositionDatesHeader, PositionBullets, EducationBullets, SkillsAndInterests, AwardsBullets, PositionBulletsUl
   },
   data: function () {
     return {
-      activeItem: 'resume',
       selfStudy: [
         {bullet: "Focus primarily on full-stack JavaScript and more specifically React & Node"},
         {bullet: "Learn through a mix of my own projects, tutorials, online reading, and contributing to open source"},
@@ -147,14 +146,6 @@ export default {
         {title: "Skills", skill: ": scrappiness, autodidacticism, listening, leadership, empathy, pattern recognition, mnemonic memory, dog whispering"},
         {title: "Interests", skill: ": my dog Daphne, NYT Crosswords, downtown LA, Mad Men, topographical maps, NY-style pizza, rugby, Hawaii"}
       ]
-    }
-  },
-  methods: {
-    isActive: function (menuItem) {
-      return this.activeItem === menuItem
-    },
-    setActive: function (menuItem) {
-      this.activeItem = menuItem
     }
   }
 }

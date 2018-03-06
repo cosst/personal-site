@@ -3,7 +3,7 @@
     <partial-header title="About"></partial-header>
     <div class="main">
       <div class="sidebar-toggle">
-        <partial-sidebar></partial-sidebar>
+        <sidebar></sidebar>
       </div>
       <div class="main-container">
         <div class="main-area">
@@ -56,23 +56,24 @@
 </template>
 
 <script>
-import PartialHeader from './PartialHeader'
-import PartialSidebar from './PartialSidebar'
-import PartialFooter from './PartialFooter'
-import EmailTitle from './EmailTitle'
-import EmailHeader from './EmailHeader'
+import PartialHeader from './partials/PartialHeader'
+import Sidebar from './partials/Sidebar'
+import PartialFooter from './partials/PartialFooter'
+import EmailTitle from './partials/EmailTitle'
+import EmailHeader from './partials/EmailHeader'
 
 export default {
   name: 'about',
-  components: { PartialHeader, PartialSidebar, PartialFooter, EmailTitle, EmailHeader
+  components: { PartialHeader, Sidebar, PartialFooter, EmailTitle, EmailHeader
   },
-  data: function () {
-    return {
-      selfStudy: [
-        {bullet: "Focus primarily on full-stack JavaScript and more specifically React & Node"},
-        {bullet: "Learn through a mix of my own projects, tutorials, online reading, and contributing to open source"},
-        {bullet: "Enrolled in Harvard’s CS50x to build foundational CS knowledge; estimated completion: February 2018"}
-      ]
+  metaInfo: {
+    title: 'About', // set a title
+    meta: [
+      { name: 'description', content: 'about page description'}
+    ],
+    htmlAttrs: {
+      lang: 'en',
+      amp: undefined // "amp" has no value
     }
   }
 }

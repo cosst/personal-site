@@ -169,7 +169,7 @@ export default {
   text-align: right;
 }
 .header-logo-image {
-  background-image: url("../assets/oswald.png");
+  background-image: url("../../assets/oswald.png");
   background-size: 32px 32px;
   border-radius: 50%;
   display: inline-block;
@@ -288,19 +288,12 @@ export default {
   width: 100%;
 }
 @media only screen and (max-width: 330px) {
-/*  .menu-bar {
-    padding: 5px 0px;
-  }*/
   .menu-mail {
     margin-right: -50px;
   }
   .menu-menu-text {
     display: none;
   }
-/*  .menu-middle {
-    margin-left: 10px;
-    text-align: center;
-  }*/
 }
 @media only screen and (max-width: 350px) {
   .menu-icon {

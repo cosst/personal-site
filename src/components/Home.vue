@@ -3,7 +3,7 @@
     <partial-header title="Home"></partial-header>
     <div class="main">
       <div class="sidebar-toggle">
-        <partial-sidebar></partial-sidebar>
+        <sidebar></sidebar>
       </div>
       <div class="main-container">
         <div class="main-area">
@@ -45,18 +45,25 @@
 </template>
 
 <script>
-import PartialHeader from './PartialHeader'
-import PartialSidebar from './PartialSidebar'
-import PartialFooter from './PartialFooter'
-import EmailTitle from './EmailTitle'
-import EmailHeader from './EmailHeader'
+import PartialHeader from './partials/PartialHeader'
+import Sidebar from './partials/Sidebar'
+import PartialFooter from './partials/PartialFooter'
+import EmailTitle from './partials/EmailTitle'
+import EmailHeader from './partials/EmailHeader'
 
 export default {
   name: 'home',
-  components: { PartialHeader, PartialSidebar, PartialFooter, EmailTitle, EmailHeader
+  components: { PartialHeader, Sidebar, PartialFooter, EmailTitle, EmailHeader
   },
-  data: function () {
-    return { activeItem: 'home' }
+  metaInfo: {
+    title: 'Home', // set a title
+    meta: [
+      { name: 'description', content: 'this is the description for the home page'}
+    ],
+    htmlAttrs: {
+      lang: 'en',
+      amp: undefined // "amp" has no value
+    }
   }
 }
 </script>

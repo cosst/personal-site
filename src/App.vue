@@ -6,7 +6,15 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  metaInfo: {
+    title: 'Nate Schier', // set a title
+    titleTemplate: '%s - Nate Schier', // title is now "My Example App - Yay!"
+    htmlAttrs: {
+      lang: 'en',
+      amp: undefined // "amp" has no value
+    }
+  }
 }
 </script>
 

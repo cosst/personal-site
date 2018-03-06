@@ -1,8 +1,12 @@
-# resume
+# Personal Site
 
-> Responsive resume.
+> Personal site for Nate Schier using Vue & Express.
 
-## Build Setup
+## See It Live
+
+[www.nateschier.com](http://www.nateschier.com/)
+
+## Local Setup
 
 ``` bash
 # install dependencies
@@ -10,7 +14,11 @@ npm install
 
 # serve with hot reload at localhost:8080
 npm run dev
+```
 
+## Building For Proudction
+
+``` bash
 # build for production with minification
 npm run build
 

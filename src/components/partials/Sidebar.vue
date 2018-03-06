@@ -24,7 +24,7 @@
             </div>
               <ul>
                 <router-link to="/" exact tag="li">Home</router-link>
-                <router-link to="about" tag="li">Work</router-link>
+                <router-link to="about" tag="li">About</router-link>
                 <!-- <router-link to="blog" tag="li">Blog</router-link> -->
                 <router-link to="daphne" tag="li">Daphne</router-link>
                 <router-link to="resume" tag="li">Resume</router-link>
@@ -91,19 +91,8 @@
 
 <script>
 export default {
-  name: 'partial-sidebar',
-  props: ['title'],
-  data: function () {
-    return { activeItem: 'home' }
-  },
-  methods: {
-    isActive: function (menuItem) {
-      return this.activeItem === menuItem
-    },
-    setActive: function (menuItem) {
-      this.activeItem = menuItem
-    }
-  }
+  name: 'sidebar',
+  props: ['title']
 }
 </script>
 
@@ -159,19 +148,19 @@ export default {
   width: 32px;
 }
 .chat-icon-image-bill {
-  background-image: url("../assets/bill.png")
+  background-image: url("../../assets/bill.png")
 }
 
 .chat-icon-image-daphne {
-  background-image: url("../assets/daphne.jpg")
+  background-image: url("../../assets/daphne.jpg")
 }
 
 .chat-icon-image-god {
-  background-image: url("../assets/god.jpeg")
+  background-image: url("../../assets/god.jpeg")
 }
 
 .chat-icon-image-dory {
-  background-image: url("../assets/dory.jpg")
+  background-image: url("../../assets/dory.jpg")
 }
 .chat-light-video {
   color: #aaaaaa;
