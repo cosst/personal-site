@@ -7,14 +7,17 @@
       </div>
       <div class="main-container">
         <div class="main-area">
-          <email-title subject="What can I help you with?" title="Contact"></email-title>
+          <email-title subject="Thanks for your message!" title="Contact"></email-title>
           <div class="main-content">
             <email-header></email-header>
             <p>
               Hi friend,
             </p>
             <p>
-              Please send me a message below and I will get back to you shortly. The more info you can provide the better!
+              Thank you for your message. I will get back to you via email shortly.
+            </p>
+            <p>
+              In the meantime, please feel free to connect with me on <a href="https://www.linkedin.com/in/nateschier/" target="_blank">LinkedIn</a> or follow me on <a href="https://twitter.com/ntschier" target="_blank">Twitter</a>, <a href="https://www.instagram.com/ntschier/" target="_blank">Instagram</a>, or <a href="https://github.com/cosst" target="_blank">GitHub</a>.
             </p>
             <p>
               Thanks,
@@ -22,28 +25,6 @@
             <p>
               Nate
             </p>
-          </div>
-          <div class="contact-form-container">
-            <div class="contact-form-body">
-              <form action="https://formspree.io/nathaniel.schier@gmail.com" method="POST">
-
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Jenny Tutone" />
-
-                <input type="hidden" name="_subject" value="New message from nateschier.com" />
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="_replyto" placeholder="jenny867@gmail.com" />
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Can you please stop giving people my number?" style="height:200px"></textarea>
-
-                <input type="hidden" name="_next" value="http://www.nateschier.com/contact-success" />
-
-                <input type="submit" value="Submit">
-
-              </form>
-            </div>
           </div>
         </div>
       </div>
@@ -60,7 +41,7 @@ import EmailTitle from './EmailTitle'
 import EmailHeader from './EmailHeader'
 
 export default {
-  name: 'contact',
+  name: 'contact-success',
   components: { PartialHeader, PartialSidebar, PartialFooter, EmailTitle, EmailHeader
   }
 }

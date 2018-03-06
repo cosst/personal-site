@@ -3,9 +3,11 @@
     <div class="sidebar">
       <div class="folder-container">
         <div class="compose">
-          <div class="compose-button">
-            <a href="/#/contact">CONTACT ME</a>
-          </div>
+          <router-link to="contact">
+            <div class="compose-button">
+              CONTACT ME
+            </div>
+          </router-link>
         </div>
         <div class="folders">
           <div class="nav-fake">
@@ -188,7 +190,10 @@ export default {
   width: 202px;
 }
 .compose a {
+  border: none;
   color: white;
+  margin-left: 0px !important;
+  padding-left: 0px !important;
 }
 .compose-button {
   background-color: #d14836;
@@ -208,6 +213,12 @@ export default {
   text-transform: uppercase;
   white-space: nowrap;
   width: 97px;
+}
+.compose-button:hover {
+  background-color: #c53727;
+  background-image: linear-gradient(to bottom,#dd4b39,#c53727);
+  border: 1px solid #b0281a;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
 }
 .folder-container {
   display: flex;

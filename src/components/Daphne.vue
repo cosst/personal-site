@@ -74,7 +74,7 @@
               <img class="daphne-image" src="../assets/cute_daph_02.jpg" />
             </p>
             <p>
-              If you've got Daph fever and the only prescription is more Daph, please <a href="/#/contact">send me a message</a> and I'd be happy to oblige.
+              If you've got Daph fever and the only prescription is more Daph, please <router-link to="contact">send me a message</router-link> and I'd be happy to oblige.
             </p>
             <p>
               Cheers,

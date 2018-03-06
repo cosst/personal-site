@@ -6,7 +6,7 @@ import About from '@/components/About'
 import Blog from '@/components/Blog'
 import Daphne from '@/components/Daphne'
 import Contact from '@/components/Contact'
-
+import ContactSuccess from '@/components/ContactSuccess'
 
 Vue.use(Router)
 
@@ -42,6 +42,11 @@ export default new Router({
       path: '/contact',
       name: 'contact',
       component: Contact
+    },
+    {
+      path: '/contact-success',
+      name: 'contact-success',
+      component: ContactSuccess
     }
   ],
   scrollBehavior (to, from, savedPosition) {
