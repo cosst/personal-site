@@ -59,7 +59,11 @@ export default {
     title: 'Nate Schier', // set a title
     titleTemplate: null,
     meta: [
-      { name: 'description', content: 'I am a full stack engineer and consultant with a primary focus on JavaScript.'}
+      { name: 'description', content: 'I am a full stack engineer and consultant with a primary focus on JavaScript.'},
+      { property: 'og:title', content: 'Nate Schier'},
+      { property: 'og:description', content: 'I am a full stack engineer and consultant with a primary focus on JavaScript.'},
+      { property: 'og:image', content: 'http://www.nateschier.com/static/oswald.png'},
+      { property: 'og:url', content: 'http://www.nateschier.com/'}
     ],
     htmlAttrs: {
       lang: 'en',

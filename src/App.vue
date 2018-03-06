@@ -9,7 +9,7 @@ export default {
   name: 'App',
   metaInfo: {
     title: 'Nate Schier', // set a title
-    titleTemplate: '%s - Nate Schier', // title is now "My Example App - Yay!"
+    titleTemplate: '%s - Nate Schier',
     htmlAttrs: {
       lang: 'en',
       amp: undefined // "amp" has no value

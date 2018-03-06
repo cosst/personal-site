@@ -104,7 +104,11 @@ export default {
   metaInfo: {
     title: 'Daphne', // set a title
     meta: [
-      { name: 'description', content: 'All about Daphne, my two year old French Mastiff and lab mix.'}
+      { name: 'description', content: 'All about Daphne, my two year old French Mastiff and lab mix.'},
+      { property: 'og:title', content: 'Daphne - Nate Schier'},
+      { property: 'og:description', content: 'All about Daphne, my two year old French Mastiff and lab mix.'},
+      { property: 'og:image', content: 'http://www.nateschier.com/static/puppy_daph.png'},
+      { property: 'og:url', content: 'http://www.nateschier.com/daphne'}
     ],
     htmlAttrs: {
       lang: 'en',

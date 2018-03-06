@@ -69,7 +69,11 @@ export default {
   metaInfo: {
     title: 'About', // set a title
     meta: [
-      { name: 'description', content: 'about page description'}
+      { name: 'description', content: 'Independent full stack engineer and consultant based in Los Angeles with a primary focus on JavaScript. Previously co-founded Sidebench.'},
+      { property: 'og:title', content: 'About - Nate Schier'},
+      { property: 'og:description', content: 'Independent full stack engineer and consultant based in Los Angeles with a primary focus on JavaScript. Previously co-founded Sidebench.'},
+      { property: 'og:image', content: 'http://www.nateschier.com/static/oswald.png'},
+      { property: 'og:url', content: 'http://www.nateschier.com/about'}
     ],
     htmlAttrs: {
       lang: 'en',

@@ -35,15 +35,15 @@
               </div>
               <div>
                 <p class="summary-text">
-                  After co-founding and growing Sidebench for 5 years (#329 on the Inc. 500 list for 2017), I decided to leave the company in July 2017 to fulfill a long time desire to build my own software engineering skillset. Currently looking for an internship or full-time junior developer position with a high-performing team where I can both contribute and learn.
+                  After co-founding and growing Sidebench for 5 years (#329 on the Inc. 500 list for 2017), I decided to leave the company in July 2017 to fulfill a long time desire to build my own software engineering skillset. Currently interested in contract work, apprenticeships, and potentially full-time positions with a high-performing team where I can both contribute and learn.
                 </p>
               </div>
               <div>
                 <section-header heading="PROFESSIONAL EXPERIENCE"></section-header>
               </div>
               <div>
-                <company-location-header company="Self-Study - Software Engineering" location="Los Angeles, CA"></company-location-header>
-                <position-dates-header position="Me" dates="September 2017 - Present"></position-dates-header>
+                <company-location-header company="Full Stack JavaScript Engineer" location="Los Angeles, CA"></company-location-header>
+                <position-dates-header position="Contract & Self-Study" dates="September 2017 - Present"></position-dates-header>
                 <position-bullets :bullets='selfStudy'></position-bullets>
                 <position-bullets-ul :bullets='selfStudy2'></position-bullets-ul>
               </div>
@@ -105,7 +105,11 @@ export default {
   metaInfo: {
     title: 'Resume', // set a title
     meta: [
-      { name: 'description', content: 'Resume for Nate Schier, an independent full stack engineer and consultant based in Los Angeles with a primary focus on JavaScript.'}
+      { name: 'description', content: 'Resume for Nate Schier, an independent full stack engineer and consultant based in Los Angeles with a primary focus on JavaScript.'},
+      { property: 'og:title', content: 'Resume - Nate Schier'},
+      { property: 'og:description', content: 'Resume for Nate Schier, an independent full stack engineer and consultant based in Los Angeles with a primary focus on JavaScript.'},
+      { property: 'og:image', content: 'http://www.nateschier.com/static/oswald.png'},
+      { property: 'og:url', content: 'http://www.nateschier.com/resume'}
     ],
     htmlAttrs: {
       lang: 'en',
@@ -116,12 +120,12 @@ export default {
     return {
       selfStudy: [
         {bullet: "Focus primarily on full-stack JavaScript and more specifically React & Node"},
-        {bullet: "Learn through a mix of my own projects, tutorials, online reading, and contributing to open source"},
-        {bullet: "Enrolled in Harvard’s CS50x to build foundational CS knowledge; estimated completion: February 2018"}
+        {bullet: "Learn through a mix of contract work, my own projects, tutorials, online reading, and contributing to open source"},
+        {bullet: "Enrolled in Harvard’s CS50x to build foundational CS knowledge; estimated completion: March 2018"}
       ],
       selfStudy2: [
         {title: "GitHub profile", text: ": https://github.com/cosst"},
-        {title: "Technologies", text: ": JavaScript, React, Node, Python, Express, MongoDB, Mocha, webpack, Babel, Git, Yarn/npm, Heroku"}
+        {title: "Technologies", text: ": JavaScript, React, Vue, Node, Python, Express, MongoDB, RethinkDB, REST APIs, Mocha, Chai, webpack, Babel, Git, Yarn/npm, Heroku, Firebase"}
       ],
       sidebench: [
         {bullet: "Co-founded a leading LA-based product consulting company; bootstrapped it to $2.5m revenue in 2016"},

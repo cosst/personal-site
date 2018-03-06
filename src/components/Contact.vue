@@ -66,7 +66,11 @@ export default {
   metaInfo: {
     title: 'Contact', // set a title
     meta: [
-      { name: 'description', content: 'Please send me a message if you would like to discuss consulting, contracting, apprenticeship, or full-time opportunities. Or if you just want to say hi.'}
+      { name: 'description', content: 'Please send me a message if you would like to discuss consulting, contracting, apprenticeship, or full-time opportunities. Or if you just want to say hi.'},
+      { property: 'og:title', content: 'Contact - Nate Schier'},
+      { property: 'og:description', content: 'Please send me a message if you would like to discuss consulting, contracting, apprenticeship, or full-time opportunities. Or if you just want to say hi.'},
+      { property: 'og:image', content: 'http://www.nateschier.com/static/oswald.png'},
+      { property: 'og:url', content: 'http://www.nateschier.com/contact'}
     ],
     htmlAttrs: {
       lang: 'en',

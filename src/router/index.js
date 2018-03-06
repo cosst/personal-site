@@ -19,20 +19,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home,
-      meta: {
-        title: 'About Page - Example App',
-        metaTags: [
-          {
-            name: 'description',
-            content: 'The about page of our example app.'
-          },
-          {
-            property: 'og:description',
-            content: 'The about page of our example app.'
-          }
-        ]
-      }
+      component: Home
     },
     {
       path: '/resume',

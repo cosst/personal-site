@@ -199,7 +199,11 @@ export default {
   metaInfo: {
     title: 'Blog', // set a title
     meta: [
-      { name: 'description', content: 'Writings and musings by Nate Schier, an independent full stack engineer and consultant based in Los Angeles with a primary focus on JavaScript.'}
+      { name: 'description', content: 'Writings and musings by Nate Schier, an independent full stack engineer and consultant based in Los Angeles with a primary focus on JavaScript.'},
+      { property: 'og:title', content: 'Blog - Nate Schier'},
+      { property: 'og:description', content: 'Writings and musings by Nate Schier, an independent full stack engineer and consultant based in Los Angeles with a primary focus on JavaScript.'},
+      { property: 'og:image', content: 'http://www.nateschier.com/static/oswald.png'},
+      { property: 'og:url', content: 'http://www.nateschier.com/blog'}
     ],
     htmlAttrs: {
       lang: 'en',
