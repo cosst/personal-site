@@ -7,7 +7,7 @@
       </div>
       <div class="header-search">
         <form action="https://www.google.com/search" method="get" target="_blank">
-          <input name="sitesearch" type="hidden" value="reddit.com">
+          <input name="sitesearch" type="hidden" value="nateschier.com">
           <input name="q" type="text">
           <button class="search-button"><i class="fas fa-search"></i></button>
         </form>
