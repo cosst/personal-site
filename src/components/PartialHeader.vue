@@ -13,16 +13,16 @@
         </form>
       </div>
       <div class="header-logo">
-        <a href="/">
+        <router-link to="/">
           <span class="header-logo-image"></span>
-        </a>
+        </router-link>
       </div>
     </div>
   </div>
   <div class="menu-bar">
     <div class="menu-container">
       <div class="menu-mail">
-        Menu <i class="fas fa-caret-down small-caret"></i>
+        <span class="menu-menu-text">Menu</span> <i class="fas fa-caret-down small-caret"></i>
              <i class="fas fa-caret-right small-caret"></i>
       </div>
       <div class="menu-middle">
@@ -42,34 +42,34 @@
           </a>
         </div>
         <div class="menu-icon social-med-screen-icon">
-          <a href="/">
+          <router-link to="/">
             <i class="fas fa-home"></i>
-          </a>
+          </router-link>
         </div>
         <div class="menu-icon social-med-screen-icon">
-          <a href="/resume">
-            <i class="fas fa-file-alt"></i>
-          </a>
+          <router-link to="/about">
+            <i class="fas fa-user"></i>
+          </router-link>
         </div>
-        <div class="menu-icon social-med-screen-icon">
-          <a href="/work">
-            test
-          </a>
-        </div>
-        <div class="menu-icon social-med-screen-icon">
-          <a href="/blog">
+<!--         <div class="menu-icon social-med-screen-icon">
+          <router-link to="/blog">
             <i class="fas fa-lightbulb"></i>
-          </a>
-        </div>
+          </router-link>
+        </div> -->
         <div class="menu-icon social-med-screen-icon">
-          <a href="/daphne">
+          <router-link to="/daphne">
             <i class="fas fa-paw"></i>
-          </a>
+          </router-link>
         </div>
         <div class="menu-icon social-med-screen-icon">
-          <a href="/contact">
+          <router-link to="/resume">
+            <i class="fas fa-file-alt"></i>
+          </router-link>
+        </div>
+        <div class="menu-icon social-med-screen-icon">
+          <router-link to="/contact">
             <i class="fas fa-envelope-square"></i>
-          </a>
+          </router-link>
         </div>
 
       </div>
@@ -287,19 +287,22 @@ export default {
   overflow: hidden;
   width: 100%;
 }
-@media only screen and (max-width: 414px) {
-  .menu-bar {
+@media only screen and (max-width: 330px) {
+/*  .menu-bar {
     padding: 5px 0px;
-  }
+  }*/
   .menu-mail {
+    margin-right: -50px;
+  }
+  .menu-menu-text {
     display: none;
   }
-  .menu-middle {
+/*  .menu-middle {
     margin-left: 10px;
     text-align: center;
-  }
+  }*/
 }
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 350px) {
   .menu-icon {
     width: 18px;
   }

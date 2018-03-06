@@ -22,10 +22,10 @@
             </div>
               <ul>
                 <router-link to="/" exact tag="li">Home</router-link>
-                <router-link to="resume" tag="li">Resume</router-link>
-                <router-link to="work" tag="li">Work</router-link>
-                <router-link to="blog" tag="li">Blog</router-link>
+                <router-link to="about" tag="li">Work</router-link>
+                <!-- <router-link to="blog" tag="li">Blog</router-link> -->
                 <router-link to="daphne" tag="li">Daphne</router-link>
+                <router-link to="resume" tag="li">Resume</router-link>
                 <router-link to="contact" tag="li">Contact</router-link>
               </ul>
           </div>
@@ -248,6 +248,7 @@ export default {
 }
 .nav-menu li:hover {
   background-color: #f1f1f1;
+  cursor: pointer;
 }
 .nav-menu li:active {
   color: #dd4b39;
@@ -256,7 +257,7 @@ export default {
   border-left: 4px solid #dd4b39;
   color: #dd4b39;
   margin-left: -33px !important;
-  padding-left: 38.5px !important;
+  padding-left: 39px !important;
 }
 .sidebar {
   height: 465px;

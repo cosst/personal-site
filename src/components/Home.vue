@@ -17,16 +17,16 @@
               Welcome to my website!
             </p>
             <p>
-              I am a software developer and consultant based in Los Angeles. Please have a look around to get to know me a bit better, and if you'd like to get in touch regarding either a potential engagement or cute puppy pics/videos, <a href="/#/contact">please shoot me a message</a>.
+              I am a full stack engineer and consultant based in Los Angeles. Please have a look around to get to know me a bit better, and if you want you can <router-link to="contact">send me a message</router-link>.
             </p>
             <div class="home-site-menu">
               Site Menu:
               <ul>
-                <a href="/#/resume" v-on:click="setActive('resume')" :class="{ active: isActive('resume') }"><li>Resume</li></a>
-                <a href="/#/work"><li>Work</li></a>
-                <a href="/#/blog"><li>Blog</li></a>
-                <a href="/#/daphne"><li>Daphne</li></a>
-                <a href="/#/contact"><li>Contact</li></a>
+                <router-link to="about" tag="li" class="home-site-menu-links">About</router-link>
+                <!-- <router-link to="/blog" tag="li" class="home-site-menu-links">Blog</router-link> -->
+                <router-link to="daphne" tag="li" class="home-site-menu-links">Daphne</router-link>
+                <router-link to="resume" tag="li" class="home-site-menu-links">Resume</router-link>
+                <router-link to="contact" tag="li" class="home-site-menu-links">Contact</router-link>
               </ul>
             </div>
             </p>
@@ -57,14 +57,6 @@ export default {
   },
   data: function () {
     return { activeItem: 'home' }
-  },
-  methods: {
-    isActive: function (menuItem) {
-      return this.activeItem === menuItem
-    },
-    setActive: function (menuItem) {
-      this.activeItem = menuItem
-    }
   }
 }
 </script>
@@ -119,6 +111,10 @@ export default {
 .home-site-menu li {
   margin-left: 30px;
   padding: 5px 5px;
+}
+.home-site-menu-links {
+  color: #00e;
+  cursor: pointer;
 }
 .page {
   background-color: white;

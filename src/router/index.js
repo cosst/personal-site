@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Resume from '@/components/Resume'
-import Work from '@/components/Work'
+import About from '@/components/About'
 import Blog from '@/components/Blog'
 import Daphne from '@/components/Daphne'
 import Contact from '@/components/Contact'
@@ -24,9 +24,9 @@ export default new Router({
       component: Resume
     },
     {
-      path: '/work',
-      name: 'work',
-      component: Work
+      path: '/about',
+      name: 'about',
+      component: About
     },
     {
       path: '/blog',
@@ -43,5 +43,12 @@ export default new Router({
       name: 'contact',
       component: Contact
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+  if (savedPosition) {
+    return savedPosition
+  } else {
+    return { x: 0, y: 0 }
+  }
+}
 })

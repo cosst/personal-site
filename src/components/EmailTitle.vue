@@ -41,6 +41,11 @@ export default {
   margin-left: 15px;
   padding: 0px 10px;
 }
+@media only screen and (max-width: 390px)  {
+  .email-title-tag {
+    display: none;
+  }
+}
 @media only screen and (max-width: 800px)  {
   .email-title {
     margin-top: 51px;
