@@ -280,6 +280,14 @@ export default {
   height: 30px;
   width: 60px;
 }
+.search-button:active {
+  background: -webkit-linear-gradient(top,#3c7ae4,#3f76d3);
+  box-shadow: inset 0 2px 0 rgba(0,0,0,.15);
+}
+.search-button:focus {
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
+  outline-width: 0px;
+}
 .small-caret {
   font-size: 0.65em;
 }

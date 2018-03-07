@@ -218,8 +218,10 @@ export default {
   padding: 50px;
 }
 .summary-text {
-  margin-bottom: 10px;
+  font-size: 100%;
+  margin: 0px 0px 10px;
   text-align: left;
+  width: 100%;
 }
 h1 {
   font-size: 50px;

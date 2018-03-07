@@ -85,10 +85,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-p {
-  margin: 15px 32.5px;
-  width: 80%;
-}
 .container {
   background-color: white;
   display: flex;
@@ -138,6 +134,12 @@ p {
   }
   .main-container {
     margin-left: 212px;
+  }
+}
+@media only screen and (max-width: 414px)  {
+  .portfolio-menu li {
+    font-size: 120%;
+    margin-left: 20px;
   }
 }
 </style>

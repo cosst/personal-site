@@ -120,10 +120,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-p {
-  margin: 15px 32.5px;
-  width: 80%;
-}
 .container {
   background-color: white;
   display: flex;

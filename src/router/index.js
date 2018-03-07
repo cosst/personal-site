@@ -10,6 +10,11 @@ import Daphne from '@/components/Daphne'
 import Contact from '@/components/Contact'
 import ContactSuccess from '@/components/ContactSuccess'
 
+Vue.component('modal', {
+  props: ['img'],
+  template: '#modal-template'
+})
+
 Vue.use(Router)
 Vue.use(Meta)
 

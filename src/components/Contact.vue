@@ -104,10 +104,6 @@ input[type=submit] {
 label {
   font-size: 14px;
 }
-p {
-  margin: 15px 32.5px;
-  width: 80%;
-}
 .contact-form-body {
   margin: 0 auto;
   width: 80%;
@@ -159,7 +155,7 @@ p {
 }
 @media only screen and (max-width: 800px)  {
   input[type=text], input[type=email], textarea {
-    width: 95%;
+    width: 92%;
   }
   .sidebar-toggle {
     display: none;

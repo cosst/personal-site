@@ -49,7 +49,7 @@ li {
 }
 @media only screen and (max-width: 460px)  {
   li {
-    margin-left: 15px;
+    margin-left: 20px;
     margin-right: 0px;
   }
 }

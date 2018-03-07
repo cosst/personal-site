@@ -70,7 +70,14 @@
         </div>
         <div class="chat-friend">
           <div class="chat-icon">
-            <span class="chat-icon-image chat-icon-image-god"></span>
+              <span id="show-modal" @click="showModal = true" class="chat-icon-image chat-icon-image-god"></span>
+              <modal v-if="showModal" @close="showModal = false" img="https://media.giphy.com/media/G3fPad8N68GfS/giphy.gif">
+                <!--
+                  you can use custom content here to overwrite
+                  default content
+                -->
+                <!-- <h3 slot="header">custom header</h3> -->
+              </modal>
           </div>
           <div class="chat-text">
             God<br><span class="chat-text-small"><i class="fas fa-video chat-light-video"></i> You were in a video</span>
@@ -92,7 +99,12 @@
 <script>
 export default {
   name: 'sidebar',
-  props: ['title']
+  props: ['title'],
+  data: function () {
+    return {
+      showModal : false
+    }
+  }
 }
 </script>
 

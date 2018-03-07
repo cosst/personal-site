@@ -162,11 +162,6 @@ a {
   color: black;
   text-decoration: none;
 }
-
-p {
-  margin: 15px 32.5px;
-  width: 80%;
-}
 @media only screen and (max-width: 900px)  {
   .page {
     border: none;
@@ -185,6 +180,12 @@ p {
 @media only screen and (max-width: 400px)  {
   h1 {
     font-size: 40px;
+  }
+}
+@media only screen and (max-width: 414px)  {
+  .home-site-menu {
+    font-size: 120%;
+    margin-left: 10px;
   }
 }
 @media only screen and (min-width: 801px)  {
