@@ -19,7 +19,7 @@
             <div class="page-text">
               <div>
                 <h1>NATE SCHIER</h1>
-                <div class="heading-text">601 E 2nd St., Apt. 324, Los Angeles CA 90012</div>
+                <div class="heading-text">Los Angeles, CA 90012</div>
                 <div class="heading-text">808-294-5948 | <a href="mailto:nathaniel.schier@gmail.com">nathaniel.schier@gmail.com</a></div>
                 <div class="heading-text-fa">
                   <a href="https://www.linkedin.com/in/nateschier/" target="_blank">
