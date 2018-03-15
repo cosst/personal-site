@@ -41,9 +41,10 @@
               <li>Newsletters</li>
               <li>Pomona</li>
               <li>Professional</li>
-              <li>Recipes</li>
+              <li><span v-on:click="seen = !seen">Recipes</span></li>
               <li>Sidebench</li>
             </ul>
+            <img v-if="seen" v-on:click="seen = !seen" src="../../assets/cilantro.png" class="cilantro" />
           </div>
         </div>
       </div>
@@ -72,11 +73,6 @@
           <div class="chat-icon">
               <span id="show-modal" @click="showModal = true" class="chat-icon-image chat-icon-image-god"></span>
               <modal v-if="showModal" @close="showModal = false" img="https://media.giphy.com/media/G3fPad8N68GfS/giphy.gif">
-                <!--
-                  you can use custom content here to overwrite
-                  default content
-                -->
-                <!-- <h3 slot="header">custom header</h3> -->
               </modal>
           </div>
           <div class="chat-text">
@@ -102,6 +98,7 @@ export default {
   props: ['title'],
   data: function () {
     return {
+      seen: false,
       showModal : false
     }
   }
@@ -185,6 +182,12 @@ export default {
 }
 .chat-text-small {
   font-size: 11px;
+}
+.cilantro {
+  bottom: -40px;
+  left: 375px;
+  position: absolute;
+  width: 470px;
 }
 .compose {
   text-align: center;
