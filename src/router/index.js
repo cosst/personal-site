@@ -9,6 +9,10 @@ import Blog from '@/components/Blog'
 import Daphne from '@/components/Daphne'
 import Contact from '@/components/Contact'
 import ContactSuccess from '@/components/ContactSuccess'
+import MobileInteractions from '@/components/blog/MobileInteractions' 
+import DrivingSmarter from '@/components/blog/DrivingSmarter' 
+import NamingSidebench from '@/components/blog/NamingSidebench'
+import SubtleCompanyRedFlags from '@/components/blog/SubtleCompanyRedFlags'
 
 Vue.component('modal', {
   props: ['img'],
@@ -55,6 +59,26 @@ export default new Router({
       path: '/contact-success',
       name: 'contact-success',
       component: ContactSuccess
+    },
+    {
+      path: '/blog/mobile-interactions',
+      name: 'mobile-interactions',
+      component: MobileInteractions
+    },
+    {
+      path: '/blog/driving-smarter',
+      name: 'driving-smarter',
+      component: DrivingSmarter
+    },
+    {
+      path: '/blog/naming-sidebench',
+      name: 'naming-sidebench',
+      component: NamingSidebench
+    },
+    {
+      path: '/blog/subtle-company-red-flags',
+      name: 'subtle-company-red-flags',
+      component: SubtleCompanyRedFlags
     }
   ],
   scrollBehavior (to, from, savedPosition) {

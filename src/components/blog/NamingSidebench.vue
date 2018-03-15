@@ -1,26 +1,23 @@
 <template>
   <div class="container">
-    <partial-header title="Contact"></partial-header>
+    <partial-header title="Blog"></partial-header>
     <div class="main">
       <div class="sidebar-toggle">
         <sidebar></sidebar>
       </div>
       <div class="main-container">
         <div class="main-area">
-          <email-title subject="Thanks for your message!" title="Contact"></email-title>
+          <email-title subject="Naming Sidebench" title="Blog"></email-title>
           <div class="main-content">
-            <email-header></email-header>
+            <email-header-blog date="4/19/16"></email-header-blog>
             <p>
-              Hi friend,
+              <i>A piece by BuiltInLA about how we came up with the name Sidebench.</i>
             </p>
             <p>
-              Thank you for your message. I will get back to you via email shortly.
+              Read <a href="https://www.builtinla.com/2016/04/18/origins-of-4-LA-startups-names" target="_blank">Naming Sidebench</a> on builtinla.com.
             </p>
             <p>
-              In the meantime, please feel free to connect with me on <a href="https://www.linkedin.com/in/nateschier/" target="_blank">LinkedIn</a> or follow me on <a href="https://twitter.com/ntschier" target="_blank">Twitter</a>, <a href="https://www.instagram.com/ntschier/" target="_blank">Instagram</a>, or <a href="https://github.com/cosst" target="_blank">GitHub</a>.
-            </p>
-            <p>
-              Thanks,
+              Cheers,
             </p>
             <p>
               Nate
@@ -34,20 +31,20 @@
 </template>
 
 <script>
-import PartialHeader from './partials/PartialHeader'
-import Sidebar from './partials/Sidebar'
-import PartialFooter from './partials/PartialFooter'
-import EmailTitle from './partials/EmailTitle'
-import EmailHeader from './partials/EmailHeader'
+import PartialHeader from '../partials/PartialHeader'
+import Sidebar from '../partials/Sidebar'
+import PartialFooter from '../partials/PartialFooter'
+import EmailTitle from '../partials/EmailTitle'
+import EmailHeaderBlog from '../partials/EmailHeaderBlog'
 
 export default {
-  name: 'contact-success',
-  components: { PartialHeader, Sidebar, PartialFooter, EmailTitle, EmailHeader
+  name: 'naming-sidebench',
+  components: { PartialHeader, Sidebar, PartialFooter, EmailTitle, EmailHeaderBlog
   },
   metaInfo: {
-    title: 'Message Sent', // set a title
+    title: 'Blog - Naming Sidebench', // set a title
     meta: [
-      { name: 'description', content: 'Thank you for your message. I will get back to you via email shortly.'}
+      { name: 'description', content: 'How we came up with the name Sidebench - published on the Built in LA blog.'}
     ],
     htmlAttrs: {
       lang: 'en',

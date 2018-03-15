@@ -7,175 +7,30 @@
       </div>
       <div class="main-container">
         <div class="main-area">
-          <email-title subject="Stuff I've written" title="Blog"></email-title>
+          <email-title subject="Selected musings" title="Blog"></email-title>
           <div class="main-content">
-            <div class="blog-link-line">
-              <div class="blog-link-line-first">
-                <div class="blog-link-line-icon">
-                  <i class="far fa-square"></i>
+            <div v-for="post in posts">
+              <router-link :to="post.link" exact tag="div" class="blog-link-line">
+                <div class="blog-link-line-first">
+                  <div class="blog-link-line-icon">
+                    <i class="far fa-square"></i>
+                  </div>
+                  <div class="blog-link-line-icon">
+                    <i class="far fa-star"></i>
+                  </div>
+                  <div class="blog-link-line-author">
+                    {{post.title}}
+                  </div>
                 </div>
-                <div class="blog-link-line-icon">
-                  <i class="far fa-star"></i>
+                <div class="blog-link-line-second">
+                  <div class="blog-link-line-text">
+                    {{post.slug}}
+                  </div>
+                  <div class="blog-link-line-date">
+                    {{post.date}}
+                  </div>
                 </div>
-                <div class="blog-link-line-author">
-                  Harvard's CS50 - Class Review
-                </div>
-              </div>
-              <div class="blog-link-line-second">
-                <div class="blog-link-line-text">
-                  Summary and review of my experience taking Harvard's CS50 course online.
-                </div>
-                <div class="blog-link-line-date">
-                  Feb 16
-                </div>
-              </div>
-            </div>
-            <div class="blog-link-line">
-              <div class="blog-link-line-first">
-                <div class="blog-link-line-icon">
-                  <i class="far fa-square"></i>
-                </div>
-                <div class="blog-link-line-icon">
-                  <i class="far fa-star"></i>
-                </div>
-                <div class="blog-link-line-author">
-                  Leaving My Own Startup
-                </div>
-              </div>
-              <div class="blog-link-line-second">
-                <div class="blog-link-line-text">
-                  Why I left Sidebench, the company I co-founded, after 5 years. 
-                </div>
-                <div class="blog-link-line-date">
-                  Feb 11
-                </div>
-              </div>
-            </div>
-            <div class="blog-link-line">
-              <div class="blog-link-line-first">
-                <div class="blog-link-line-icon">
-                  <i class="far fa-square"></i>
-                </div>
-                <div class="blog-link-line-icon">
-                  <i class="far fa-star"></i>
-                </div>
-                <div class="blog-link-line-author">
-                  What Language Should I Learn?
-                </div>
-              </div>
-              <div class="blog-link-line-second">
-                <div class="blog-link-line-text">
-                  A guide and some (hopefully) helpful tips for those getting into the dev world.
-                </div>
-                <div class="blog-link-line-date">
-                  Feb 7
-                </div>
-              </div>
-            </div>
-            <div class="blog-link-line">
-              <div class="blog-link-line-first">
-                <div class="blog-link-line-icon">
-                  <i class="far fa-square"></i>
-                </div>
-                <div class="blog-link-line-icon">
-                  <i class="far fa-star"></i>
-                </div>
-                <div class="blog-link-line-author">
-                  WTF Are Pointers?
-                </div>
-              </div>
-              <div class="blog-link-line-second">
-                <div class="blog-link-line-text">
-                  My attempt at a simple explanation of a very important yet tricky CS topic.
-                </div>
-                <div class="blog-link-line-date">
-                  Jan 29
-                </div>
-              </div>
-            </div>
-            <div class="blog-link-line">
-              <div class="blog-link-line-first">
-                <div class="blog-link-line-icon">
-                  <i class="far fa-square"></i>
-                </div>
-                <div class="blog-link-line-icon">
-                  <i class="far fa-star"></i>
-                </div>
-                <div class="blog-link-line-author">
-                  Harvard's CS50 - Class Review
-                </div>
-              </div>
-              <div class="blog-link-line-second">
-                <div class="blog-link-line-text">
-                  Summary and review of my experience taking Harvard's CS50 course online.
-                </div>
-                <div class="blog-link-line-date">
-                  Feb 16
-                </div>
-              </div>
-            </div>
-            <div class="blog-link-line">
-              <div class="blog-link-line-first">
-                <div class="blog-link-line-icon">
-                  <i class="far fa-square"></i>
-                </div>
-                <div class="blog-link-line-icon">
-                  <i class="far fa-star"></i>
-                </div>
-                <div class="blog-link-line-author">
-                  Harvard's CS50 - Class Review
-                </div>
-              </div>
-              <div class="blog-link-line-second">
-                <div class="blog-link-line-text">
-                  Summary and review of my experience taking Harvard's CS50 course online.
-                </div>
-                <div class="blog-link-line-date">
-                  Feb 16
-                </div>
-              </div>
-            </div>
-            <div class="blog-link-line">
-              <div class="blog-link-line-first">
-                <div class="blog-link-line-icon">
-                  <i class="far fa-square"></i>
-                </div>
-                <div class="blog-link-line-icon">
-                  <i class="far fa-star"></i>
-                </div>
-                <div class="blog-link-line-author">
-                  Harvard's CS50 - Class Review
-                </div>
-              </div>
-              <div class="blog-link-line-second">
-                <div class="blog-link-line-text">
-                  Summary and review of my experience taking Harvard's CS50 course online.
-                </div>
-                <div class="blog-link-line-date">
-                  Feb 16
-                </div>
-              </div>
-            </div>
-            <div class="blog-link-line">
-              <div class="blog-link-line-first">
-                <div class="blog-link-line-icon">
-                  <i class="far fa-square"></i>
-                </div>
-                <div class="blog-link-line-icon">
-                  <i class="far fa-star"></i>
-                </div>
-                <div class="blog-link-line-author">
-                  Harvard's CS50 - Class Review
-                </div>
-              </div>
-              <div class="blog-link-line-second">
-                <div class="blog-link-line-text">
-                  Summary and review of my experience taking Harvard's CS50 course online.
-                </div>
-                <div class="blog-link-line-date">
-                  Feb 16
-                </div>
-              </div>
+              </router-link>
             </div>
           </div>
         </div>
@@ -195,6 +50,59 @@ import EmailHeader from './partials/EmailHeader'
 export default {
   name: 'blog',
   components: { PartialHeader, Sidebar, PartialFooter, EmailTitle, EmailHeader
+  },
+  data: function () {
+    return {
+      posts: [{
+        'id': 7,
+        'title': "Harvard's CS50 - Class Review",
+        'slug': "Summary and review of my experience taking Harvard's CS50 course online.",
+        'link': '/contact',
+        'date': 'Feb 28'
+      },
+      {
+        'id': 6,
+        'title': 'Leaving My Own Startup',
+        'slug': 'Why I left Sidebench, the company I co-founded, after 5 years.',
+        'link': '/contact',
+        'date': 'Feb 19'
+      },
+      {
+        'id': 5,
+        'title': 'What Language Should I Learn?',
+        'slug': 'A guide and some (hopefully) helpful tips for those getting into the dev world.',
+        'link': '/',
+        'date': 'Jan 2'
+      },
+      {
+        'id': 4,
+        'title': 'Company Red Flags',
+        'slug': 'Subtle red flags to look for in a seemingly good company.',
+        'link': '/blog/subtle-company-red-flags',
+        'date': '3/22/17'
+      },
+      {
+        'id': 3,
+        'title': 'Naming Sidebench',
+        'slug': 'How we came up with the name Sidebench.',
+        'link': '/blog/naming-sidebench',
+        'date': '4/19/16'
+      },
+      {
+        'id': 2,
+        'title': 'Driving Smarter',
+        'slug': 'A look at tech in driving.',
+        'link': '/blog/driving-smarter',
+        'date': '2/12/14'
+      },
+      {
+        'id': 1,
+        'title': 'Mobile Interactions',
+        'slug': 'A guide to optimization.',
+        'link': '/blog/mobile-interactions',
+        'date': '1/8/14'
+      }]
+    }
   },
   metaInfo: {
     title: 'Blog', // set a title
@@ -225,6 +133,7 @@ export default {
 }
 .blog-link-line:hover {
   background-color: #f4f4f4;
+  cursor: pointer;
 }
 .blog-link-line-author {
   font-weight: bold;
