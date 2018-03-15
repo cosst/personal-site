@@ -102,6 +102,11 @@ p {
 
 .modal-body {
   margin: 20px 0;
+  text-align: center;
+}
+
+.modal-footer {
+  text-align: center;
 }
 
 .modal-default-button {

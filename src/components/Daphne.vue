@@ -17,8 +17,10 @@
               So while I'm sure you want to learn about me and all, I know the real reason you're here is to see Daphne (AKA Daph, Doodle, Bubba, Mama, etc.).
             </p>
             <p>
-              Daphne is a two year old Dogue de Bordeaux (French Mastiff) and lab mix. We got her from <a href="http://www.muchlove.org/" target="_blank">Much Love Animal Rescue</a> in August of 2016 when she was ~6.5 months old. Apparently she had been hit by a car when just a few months old and had turned up injured at the North Central Animal Shelter in LA, where a very wonderful volunteer took a liking to her and got her connected with Much Love. Much Love got her the hip and pelvic surgery she needed, and after a brief stint with some also very wonderful foster parents, she came to live with us in her forever home.
+              Daphne is a two year old <span id="show-modal" @click="showModal = true">Dogue de Bordeaux (French Mastiff)</span> and lab mix. We got her from <a href="http://www.muchlove.org/" target="_blank">Much Love Animal Rescue</a> in August of 2016 when she was ~6.5 months old. Apparently she had been hit by a car when just a few months old and had turned up injured at the North Central Animal Shelter in LA, where a very wonderful volunteer took a liking to her and got her connected with Much Love. Much Love got her the hip and pelvic surgery she needed, and after a brief stint with some also very wonderful foster parents, she came to live with us in her forever home.
             </p>
+              <modal v-if="showModal" @close="showModal = false" img="https://media1.giphy.com/media/PWuPMJggRWDCM/200.gif">
+              </modal>
             <p>
               Without further ado, some pictures of our sweet lady!
             </p>
@@ -100,6 +102,11 @@ import EmailHeader from './partials/EmailHeader'
 export default {
   name: 'daphne',
   components: { PartialHeader, Sidebar, PartialFooter, EmailTitle, EmailHeader
+  },
+  data: function () {
+    return {
+      showModal : false
+    }
   },
   metaInfo: {
     title: 'Daphne', // set a title
