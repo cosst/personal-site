@@ -25,20 +25,27 @@
           </div>
           <div class="contact-form-container">
             <div class="contact-form-body">
-              <form action="https://formspree.io/nathaniel.schier@gmail.com" method="POST">
+              <form id="contact-form" @submit="checkForm" action="https://formspree.io/nathaniel.schier@gmail.com" method="POST">
 
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Jenny Tutone" />
+                <input type="text" id="name" name="name" v-model="name" placeholder="Jenny Tutone" />
 
                 <input type="hidden" name="_subject" value="New message from nateschier.com" />
 
                 <label for="email">Email</label>
-                <input type="email" id="email" name="_replyto" placeholder="jenny867@gmail.com" />
+                <input type="email" id="email" name="_replyto" v-model="email" placeholder="jenny867@gmail.com" />
 
                 <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Can you please stop giving people my number?" style="height:200px"></textarea>
+                <textarea id="message" name="message" v-model="message" placeholder="Can you please stop giving people my number?" style="height:200px"></textarea>
 
                 <input type="hidden" name="_next" value="http://www.nateschier.com/contact-success" />
+
+                <p class="submit-error" v-if="errors.length">
+                  <b>Message not submitted. Please correct the following error(s) and try again.</b>
+                  <ul class="submit-error-list">
+                    <li v-for="error in errors">{{ error }}</li>
+                  </ul>
+                </p>
 
                 <input type="submit" value="Submit">
 
@@ -63,6 +70,14 @@ export default {
   name: 'contact',
   components: { PartialHeader, Sidebar, PartialFooter, EmailTitle, EmailHeader
   },
+  data: function () {
+    return {
+      errors: [],
+      name: null,
+      email: null,
+      message: null
+    }
+  },
   metaInfo: {
     title: 'Contact', // set a title
     meta: [
@@ -75,6 +90,16 @@ export default {
     htmlAttrs: {
       lang: 'en',
       amp: undefined // "amp" has no value
+    }
+  },
+  methods: {
+    checkForm: function(e) {
+      if (this.name && this.email && this.message) return true;
+      this.errors = [];
+      if (!this.name) this.errors.push("Name is required.");
+      if (!this.email) this.errors.push("Email is required.");
+      if (!this.message) this.errors.push("Message is required.");
+      e.preventDefault();
     }
   }
 }
@@ -152,6 +177,15 @@ label {
 }
 .main-content a {
   color: #0000EE;
+}
+.submit-error {
+  color: red;
+  margin: 20px 0px;
+  width: 100%;
+}
+.submit-error-list {
+  margin-left: 30px;
+  margin-top: 10px;
 }
 @media only screen and (max-width: 800px)  {
   input[type=text], input[type=email], textarea {
