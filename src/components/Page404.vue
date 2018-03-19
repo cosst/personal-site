@@ -1,26 +1,30 @@
 <template>
   <div class="container">
-    <partial-header title="Contact"></partial-header>
+    <partial-header title="404"></partial-header>
     <div class="main">
       <div class="sidebar-toggle">
         <sidebar></sidebar>
       </div>
       <div class="main-container">
         <div class="main-area">
-          <email-title subject="Thanks for your message!" title="Contact"></email-title>
+          <email-title subject="Oops, this page does not exist!" title="404"></email-title>
           <div class="main-content">
             <email-header></email-header>
             <p>
               Hi friend,
             </p>
             <p>
-              Thank you for your message. I will get back to you via email shortly.
+              Uh oh, it looks like the page that you are trying to reach does not exist.
             </p>
             <p>
-              In the meantime, please feel free to connect with me on <a href="https://www.linkedin.com/in/nateschier/" target="_blank">LinkedIn</a> or follow me on <a href="https://twitter.com/ntschier" target="_blank">Twitter</a>, <a href="https://www.instagram.com/ntschier/" target="_blank">Instagram</a>, or <a href="https://github.com/cosst" target="_blank">GitHub</a>.
+              Please double check the URL and try again.
             </p>
             <p>
-              Thanks,
+              If you think you have found a bug or issue with the site, I would very much appreciate it if you'd <router-link to="contact">let me know</router-link> so that I can fix it. :)
+            </p>
+            <site-map></site-map>
+            <p>
+              Cheers,
             </p>
             <p>
               Nate
@@ -39,15 +43,16 @@ import Sidebar from './partials/Sidebar'
 import PartialFooter from './partials/PartialFooter'
 import EmailTitle from './partials/EmailTitle'
 import EmailHeader from './partials/EmailHeader'
+import SiteMap from './partials/SiteMap'
 
 export default {
-  name: 'contact-success',
-  components: { PartialHeader, Sidebar, PartialFooter, EmailTitle, EmailHeader
+  name: 'page-404',
+  components: { PartialHeader, Sidebar, PartialFooter, EmailTitle, EmailHeader, SiteMap
   },
   metaInfo: {
-    title: 'Message Sent', // set a title
+    title: '404', // set a title
     meta: [
-      { name: 'description', content: 'Thank you for your message. I will get back to you via email shortly.'}
+      { name: 'description', content: 'The page you are trying to reach does not exist.'}
     ],
     htmlAttrs: {
       lang: 'en',

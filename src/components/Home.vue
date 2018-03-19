@@ -19,16 +19,7 @@
             <p>
               I am a full stack engineer and consultant based in Los Angeles. Please have a look around to get to know me a bit better, and if you want you can <router-link to="contact">send me a message</router-link>.
             </p>
-            <div class="home-site-menu">
-              Site Menu:
-              <ul>
-                <router-link to="about" tag="li" class="home-site-menu-links">About</router-link>
-                <!-- <router-link to="/blog" tag="li" class="home-site-menu-links">Blog</router-link> -->
-                <router-link to="daphne" tag="li" class="home-site-menu-links">Daphne</router-link>
-                <router-link to="resume" tag="li" class="home-site-menu-links">Resume</router-link>
-                <router-link to="contact" tag="li" class="home-site-menu-links">Contact</router-link>
-              </ul>
-            </div>
+            <site-map></site-map>
             </p>
             <p>
               Cheers,
@@ -50,10 +41,11 @@ import Sidebar from './partials/Sidebar'
 import PartialFooter from './partials/PartialFooter'
 import EmailTitle from './partials/EmailTitle'
 import EmailHeader from './partials/EmailHeader'
+import SiteMap from './partials/SiteMap'
 
 export default {
   name: 'home',
-  components: { PartialHeader, Sidebar, PartialFooter, EmailTitle, EmailHeader
+  components: { PartialHeader, Sidebar, PartialFooter, EmailTitle, EmailHeader, SiteMap
   },
   metaInfo: {
     title: 'Nate Schier', // set a title
@@ -114,20 +106,6 @@ export default {
   color: grey;
   padding: 2px;
 }
-.home-site-menu {
-  margin-left: 32px;
-}
-.home-site-menu ul {
-  margin: 5px 15px 5px 0px;
-}
-.home-site-menu li {
-  margin-left: 30px;
-  padding: 5px 5px;
-}
-.home-site-menu-links {
-  color: #00e;
-  cursor: pointer;
-}
 .page {
   background-color: white;
   border: 1px solid black;
@@ -180,12 +158,6 @@ a {
 @media only screen and (max-width: 400px)  {
   h1 {
     font-size: 40px;
-  }
-}
-@media only screen and (max-width: 414px)  {
-  .home-site-menu {
-    font-size: 120%;
-    margin-left: 10px;
   }
 }
 @media only screen and (min-width: 801px)  {

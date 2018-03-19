@@ -9,6 +9,7 @@ import Blog from '@/components/Blog'
 import Daphne from '@/components/Daphne'
 import Contact from '@/components/Contact'
 import ContactSuccess from '@/components/ContactSuccess'
+import Page404 from '@/components/Page404'
 import MobileInteractions from '@/components/blog/MobileInteractions' 
 import DrivingSmarter from '@/components/blog/DrivingSmarter' 
 import NamingSidebench from '@/components/blog/NamingSidebench'
@@ -79,6 +80,15 @@ export default new Router({
       path: '/blog/subtle-company-red-flags',
       name: 'subtle-company-red-flags',
       component: SubtleCompanyRedFlags
+    },
+    {
+      path: '*',
+      redirect: '/404'
+    },
+    {
+      path: '/404',
+      name: '404',
+      component: Page404
     }
   ],
   scrollBehavior (to, from, savedPosition) {
