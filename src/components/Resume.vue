@@ -125,7 +125,7 @@ export default {
       ],
       selfStudy2: [
         {title: "GitHub profile", text: ": https://github.com/cosst"},
-        {title: "Technologies", text: ": JavaScript, React, Vue, Node, Python, Express, MongoDB, RethinkDB, REST APIs, Mocha, Chai, webpack, Babel, Git, Yarn/npm, Heroku, Firebase"}
+        {title: "Technologies", text: ": JavaScript, React, Node, React Native, Vue, Python, Express, MongoDB, RethinkDB, REST APIs, Mocha, Chai, webpack, Babel, Git, Yarn/npm, Heroku, Firebase"}
       ],
       sidebench: [
         {bullet: "Co-founded a leading LA-based product consulting company; bootstrapped it to $2.5m revenue in 2016"},
@@ -157,7 +157,7 @@ export default {
         {title: "Study Abroad", bullet: ": Beijing (Summer 2008), Edinburgh (Fall 2008)"}
       ],
       skills: [
-        {title: "Skills", skill: ": scrappiness, autodidacticism, listening, leadership, empathy, pattern recognition, mnemonic memory, dog whispering"},
+        {title: "Skills", skill: ": Google-fu, scrappiness, listening, leadership, empathy, pattern recognition, recruiting, team building, dog whispering"},
         {title: "Interests", skill: ": my dog Daphne, NYT Crosswords, downtown LA, Mad Men, topographical maps, NY-style pizza, rugby, Hawaii"}
       ]
     }
