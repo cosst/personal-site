@@ -26,8 +26,8 @@
                 <router-link to="/" exact tag="li">Home</router-link>
                 <router-link to="about" tag="li">About</router-link>
                 <!-- <router-link to="blog" tag="li">Blog</router-link> -->
-                <router-link to="daphne" tag="li">Daphne</router-link>
                 <router-link to="resume" tag="li">Resume</router-link>
+                <router-link to="daphne" tag="li">Daphne</router-link>
                 <router-link to="contact" tag="li">Contact</router-link>
               </ul>
           </div>

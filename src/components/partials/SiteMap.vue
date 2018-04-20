@@ -4,8 +4,8 @@
     <ul>
       <router-link to="about" tag="li" class="site-map-links">About</router-link>
       <!-- <router-link to="/blog" tag="li" class="site-map-links">Blog</router-link> -->
-      <router-link to="daphne" tag="li" class="site-map-links">Daphne</router-link>
       <router-link to="resume" tag="li" class="site-map-links">Resume</router-link>
+      <router-link to="daphne" tag="li" class="site-map-links">Daphne</router-link>
       <router-link to="contact" tag="li" class="site-map-links">Contact</router-link>
     </ul>
   </div>

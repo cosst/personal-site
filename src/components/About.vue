@@ -23,10 +23,10 @@
               After graduating from Pomona College in sunny SoCal, living in Hawaii for a year, working at a high-end recruiting startup on the east coast, and co-founding and building <a href="http://sidebench.com/" target="_blank">Sidebench</a> (a digital product consultancy) for five years (<a href="https://www.inc.com/profile/sidebench" target="_blank">#329 on the Inc. 500 list for 2017</a>), I decided to leave Sidebench and fully return to the wonderful world of code in July of 2017. 
             </p>
             <p>
-              Since then I have been working as a contractor while continually studying, learning, and most importantly building things to grow my own full-stack development skillset. Thus far I have focused primarily on JavaScript, and more specifically React & Node, though I am interested in expanding out from there as well. I am also working my way through Harvard's CS50 course, and I plan to continue with other online CS courses to build a solid computational foundation and explore new fields.
+              Since then I have been working as a contractor while continually studying, learning, and most importantly building things to grow my own full-stack development skillset. Thus far I have focused primarily on JavaScript, and more specifically React & Node, though I am interested in expanding out from there as well. I have completed Harvard's CS50 course, and I plan to continue with other online CS courses to build a solid computational foundation and explore new fields.
             </p>
             <p>
-              Technologies that I am currently comfortable with include JavaScript, React, Vue, Node, Python, Express, MongoDB, RethinkDB, REST APIs, Mocha, Chai, webpack, Babel, Git, Yarn/npm, Heroku, and Firebase.
+              Technologies that I am currently comfortable with include JavaScript, React, Node, React Native, Vue, Python, Express, MongoDB, RethinkDB, REST APIs, Mocha, Chai, webpack, Babel, Git, Yarn/npm, Heroku, and Firebase.
             </p>
             <p>
               While not everything I have done thus far can be shared publicly, a few projects of mine are listed below. You are welcome to view <a href="https://github.com/cosst" target="_blank">my full GitHub profile</a> as well.

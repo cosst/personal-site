@@ -121,7 +121,7 @@ export default {
       selfStudy: [
         {bullet: "Focus primarily on full-stack JavaScript and more specifically React & Node"},
         {bullet: "Learn through a mix of contract work, my own projects, tutorials, online reading, and contributing to open source"},
-        {bullet: "Enrolled in Harvard’s CS50x to build foundational CS knowledge; estimated completion: March 2018"}
+        {bullet: "Completed Harvard’s CS50x to build foundational CS knowledge"}
       ],
       selfStudy2: [
         {title: "GitHub profile", text: ": https://github.com/cosst"},
