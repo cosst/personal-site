@@ -35,7 +35,7 @@
               </div>
               <div>
                 <p class="summary-text">
-                  After co-founding and growing Sidebench for 5 years (#329 on the Inc. 500 list for 2017), I decided to leave the company in July 2017 to fulfill a long time desire to build my own software engineering skillset. Currently interested in contract work, apprenticeships, and potentially full-time positions with a high-performing team where I can both contribute and learn.
+                  After co-founding and growing Sidebench for 5 years (#329 on the Inc. 500 list for 2017), I decided to leave the company in July 2017 to fulfill a long time desire to build my own software engineering skillset. Currently interested in contract work, apprenticeships, and technical full-time positions with a high-performing team where I can both contribute and learn.
                 </p>
               </div>
               <div>
@@ -52,7 +52,6 @@
                 <position-dates-header position="Co-Founder & Director" dates="April 2012 - July 2017"></position-dates-header>
                 <position-bullets :bullets='sidebench'></position-bullets>
                 <awards-bullets :bullets='sidebenchAwards'></awards-bullets>
-                <position-bullets :bullets='sidebench2'></position-bullets>
               </div>
               <div>
                 <company-location-header company="Elm Talent Group" location="New Haven, CT"></company-location-header>
@@ -132,16 +131,13 @@ export default {
         {bullet: "Ranked #329 on the 2017 Inc. 500 list with 3-year growth of 1346%"},
         {bullet: "Responsible for everything early on; as company grew I focused primarily on internal operations, hiring & retention, and high-level account management along with some sales"},
         {bullet: "Grew company from a group of remote contractors in 2012 to an in-house team of 20 employees in 2017; served as hiring manager across design, product, and engineering teams"},
-        {bullet: "Helped clients identify, design, develop, and launch strategic technology solutions; clients included Red Bull, Oakley, Andreessen Horowitz, NBC Universal, Inland Empire Health Plan, and Sony"}
+        {bullet: "Worked with clients to identify, plan, design, develop, and launch strategic technology solutions; oversaw product requirements gathering and served as a communication bridge between business and tech; clients included Red Bull, Oakley, Andreessen Horowitz, NBC Universal, Inland Empire Health Plan, and Sony"}
       ],
       sidebenchAwards: [
         {bullet: "Top 5 Enterprise App & Web Developers in America (Clutch)"},
         {bullet: "Top 5 Mobile App Developers in Los Angeles (SourcingLine)"},
         {bullet: "Most Promising Enterprise Mobility Solution Providers (CIO Review Magazine)"},
         {bullet: "2017 Social Impact App - nOCD (Mobile UX Awards)"}
-      ],
-      sidebench2: [
-        {bullet: "Left company voluntarily in July 2017 to build personal software engineering skillset"}
       ],
       elm: [
         {bullet: "Connected intelligent early-career talent with elite retained clients in the finance, tech, and life science sectors"},

@@ -33,7 +33,7 @@ export default {
   display: flex;
   justify-content: space-between;
   margin-top: -10px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 h3 {
   font-weight: bold;
