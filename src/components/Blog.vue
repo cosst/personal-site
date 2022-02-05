@@ -10,7 +10,12 @@
           <email-title subject="Selected musings" title="Blog"></email-title>
           <div class="main-content">
             <div v-for="post in posts">
-              <router-link :to="post.link" exact tag="div" class="blog-link-line">
+              <router-link
+                :to="post.link"
+                exact
+                tag="div"
+                class="blog-link-line"
+              >
                 <div class="blog-link-line-first">
                   <div class="blog-link-line-icon">
                     <i class="far fa-square"></i>
@@ -19,15 +24,15 @@
                     <i class="far fa-star"></i>
                   </div>
                   <div class="blog-link-line-author">
-                    {{post.title}}
+                    {{ post.title }}
                   </div>
                 </div>
                 <div class="blog-link-line-second">
                   <div class="blog-link-line-text">
-                    {{post.slug}}
+                    {{ post.slug }}
                   </div>
                   <div class="blog-link-line-date">
-                    {{post.date}}
+                    {{ post.date }}
                   </div>
                 </div>
               </router-link>
@@ -41,84 +46,102 @@
 </template>
 
 <script>
-import PartialHeader from './partials/PartialHeader'
-import Sidebar from './partials/Sidebar'
-import PartialFooter from './partials/PartialFooter'
-import EmailTitle from './partials/EmailTitle'
-import EmailHeader from './partials/EmailHeader'
+import PartialHeader from "./partials/PartialHeader";
+import Sidebar from "./partials/Sidebar";
+import PartialFooter from "./partials/PartialFooter";
+import EmailTitle from "./partials/EmailTitle";
+import EmailHeader from "./partials/EmailHeader";
 
 export default {
-  name: 'blog',
-  components: { PartialHeader, Sidebar, PartialFooter, EmailTitle, EmailHeader
+  name: "blog",
+  components: {
+    PartialHeader,
+    Sidebar,
+    PartialFooter,
+    EmailTitle,
+    EmailHeader,
   },
   data: function () {
     return {
-      posts: [{
-        'id': 7,
-        'title': "Harvard's CS50 - Class Review",
-        'slug': "Summary and review of my experience taking Harvard's CS50 course online.",
-        'link': '/contact',
-        'date': 'Feb 28'
-      },
-      {
-        'id': 6,
-        'title': 'Leaving My Own Startup',
-        'slug': 'Why I left Sidebench, the company I co-founded, after 5 years.',
-        'link': '/contact',
-        'date': 'Feb 19'
-      },
-      {
-        'id': 5,
-        'title': 'What Language Should I Learn?',
-        'slug': 'A guide and some (hopefully) helpful tips for those getting into the dev world.',
-        'link': '/',
-        'date': 'Jan 2'
-      },
-      {
-        'id': 4,
-        'title': 'Company Red Flags',
-        'slug': 'Subtle red flags to look for in a seemingly good company.',
-        'link': '/blog/subtle-company-red-flags',
-        'date': '3/22/17'
-      },
-      {
-        'id': 3,
-        'title': 'Naming Sidebench',
-        'slug': 'How we came up with the name Sidebench.',
-        'link': '/blog/naming-sidebench',
-        'date': '4/19/16'
-      },
-      {
-        'id': 2,
-        'title': 'Driving Smarter',
-        'slug': 'A look at tech in driving.',
-        'link': '/blog/driving-smarter',
-        'date': '2/12/14'
-      },
-      {
-        'id': 1,
-        'title': 'Mobile Interactions',
-        'slug': 'A guide to optimization.',
-        'link': '/blog/mobile-interactions',
-        'date': '1/8/14'
-      }]
-    }
+      posts: [
+        {
+          id: 7,
+          title: "Harvard's CS50 - Class Review",
+          slug: "Summary and review of my experience taking Harvard's CS50 course online.",
+          link: "/contact",
+          date: "Feb 28",
+        },
+        {
+          id: 6,
+          title: "Leaving My Own Startup",
+          slug: "Why I left Sidebench, the company I co-founded, after 5 years.",
+          link: "/contact",
+          date: "Feb 19",
+        },
+        {
+          id: 5,
+          title: "What Language Should I Learn?",
+          slug: "A guide and some (hopefully) helpful tips for those getting into the dev world.",
+          link: "/",
+          date: "Jan 2",
+        },
+        {
+          id: 4,
+          title: "Company Red Flags",
+          slug: "Subtle red flags to look for in a seemingly good company.",
+          link: "/blog/subtle-company-red-flags",
+          date: "3/22/17",
+        },
+        {
+          id: 3,
+          title: "Naming Sidebench",
+          slug: "How we came up with the name Sidebench.",
+          link: "/blog/naming-sidebench",
+          date: "4/19/16",
+        },
+        {
+          id: 2,
+          title: "Driving Smarter",
+          slug: "A look at tech in driving.",
+          link: "/blog/driving-smarter",
+          date: "2/12/14",
+        },
+        {
+          id: 1,
+          title: "Mobile Interactions",
+          slug: "A guide to optimization.",
+          link: "/blog/mobile-interactions",
+          date: "1/8/14",
+        },
+      ],
+    };
   },
   metaInfo: {
-    title: 'Blog', // set a title
+    title: "Blog", // set a title
     meta: [
-      { name: 'description', content: 'Writings and musings by Nate Schier, an independent full stack engineer and consultant based in Los Angeles with a primary focus on JavaScript.'},
-      { property: 'og:title', content: 'Blog - Nate Schier'},
-      { property: 'og:description', content: 'Writings and musings by Nate Schier, an independent full stack engineer and consultant based in Los Angeles with a primary focus on JavaScript.'},
-      { property: 'og:image', content: 'http://www.nateschier.com/static/oswald.png'},
-      { property: 'og:url', content: 'http://www.nateschier.com/blog'}
+      {
+        name: "description",
+        content:
+          "Writings and musings by Nate Schier, an independent full stack engineer and consultant based in Los Angeles with a primary focus on JavaScript.",
+      },
+      { property: "og:title", content: "Blog - Nate Schier" },
+      {
+        property: "og:description",
+        content:
+          "Writings and musings by Nate Schier, an independent full stack engineer and consultant based in Los Angeles with a primary focus on JavaScript.",
+      },
+      {
+        property: "og:image",
+        content: "http://www.nateschier.com/static/oswald.png",
+      },
+      { property: "og:url", content: "http://www.nateschier.com/blog" },
     ],
     htmlAttrs: {
-      lang: 'en',
-      amp: undefined // "amp" has no value
-    }
-  }
-}
+      lang: "en",
+      amp: undefined, // "amp" has no value
+    },
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -156,7 +179,7 @@ export default {
   display: flex;
   font-weight: bold;
   justify-content: space-between;
-  width: 100%;  
+  width: 100%;
 }
 .blog-link-line-text {
   font-weight: normal;
@@ -177,17 +200,17 @@ export default {
   margin: 0px 30px 0px 10px;
 }
 .main-content a {
-  color: #0000EE;
+  color: #0000ee;
 }
 .container {
   background-color: white;
   display: flex;
   flex-wrap: wrap;
-  font-family: arial,sans-serif;
+  font-family: arial, sans-serif;
   justify-content: center;
   margin: 0;
 }
-@media only screen and (max-width: 800px)  {
+@media only screen and (max-width: 800px) {
   .sidebar-toggle {
     display: none;
   }
@@ -223,7 +246,7 @@ a {
     width: 30%;
   }
 }
-@media only screen and (min-width: 801px)  {
+@media only screen and (min-width: 801px) {
   .main {
     margin-top: 112px;
   }
