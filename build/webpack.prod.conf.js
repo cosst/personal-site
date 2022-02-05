@@ -3,7 +3,7 @@ const path = require('path')
 const utils = require('./utils')
 const webpack = require('webpack')
 const config = require('../config')
-const merge = require('webpack-merge')
+const { merge } = require('webpack-merge')
 const baseWebpackConfig = require('./webpack.base.conf')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -23,6 +23,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     })
   },
   devtool: config.build.productionSourceMap ? config.build.devtool : false,
+  mode: 'production',
   output: {
     path: config.build.assetsRoot,
     filename: utils.assetsPath('js/[name].[chunkhash].js'),
@@ -37,7 +38,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       // Absolute path to compiled SPA
       path.join(__dirname, '../dist'),
       // List of routes to prerender
-      [ '/', '/about', '/daphne', '/resume', '/contact' ]
+      ['/', '/about', '/daphne', '/resume', '/contact']
     ),
     new UglifyJsPlugin({
       uglifyOptions: {
@@ -88,7 +89,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     // split vendor js into its own file
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
-      minChunks (module) {
+      minChunks(module) {
         // any required modules inside node_modules are extracted to vendor
         return (
           module.resource &&
