@@ -13,6 +13,7 @@ module.exports = {
   }),
   cssSourceMap: sourceMapEnabled,
   cacheBusting: config.dev.cacheBusting,
+  publicPath: config.dev.assetsPublicPath,
   transformToRequire: {
     video: ['src', 'poster'],
     source: 'src',
