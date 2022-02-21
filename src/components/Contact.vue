@@ -25,7 +25,7 @@
           </div>
           <div class="contact-form-container">
             <div class="contact-form-body">
-              <form id="contact-form" @submit="checkForm" action="https://formspree.io/f/nathaniel.schier@gmail.com" method="POST">
+              <form id="contact-form" @submit="checkForm" action="https://formspree.io/f/xoqrdynk" method="POST">
 
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" v-model="name" placeholder="Jenny Tutone" />
