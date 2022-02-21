@@ -17,7 +17,7 @@
               Welcome to my website!
             </p>
             <p>
-              I am a full stack engineer and consultant based in Los Angeles. Please have a look around to get to know me a bit better, and if you want you can <router-link to="contact">send me a message</router-link>.
+              I am a full stack engineer and consultant based in Connecticut. Please have a look around to get to know me a bit better, and if you're interested in working together or want to say hi you can <router-link to="contact">send me a message</router-link>.
             </p>
             <site-map></site-map>
             </p>

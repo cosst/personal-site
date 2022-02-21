@@ -215,6 +215,8 @@ export default {
   margin: 0;
 }
 .daphne-image {
+  display: block;
+  margin-bottom: 0.5rem;
   max-width: 600px;
   width: 100%;
 }
