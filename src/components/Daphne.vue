@@ -20,7 +20,7 @@
               Mama, etc.).
             </p>
             <p>
-              Daphne is a two year old
+              Daphne is a six year old
               <span id="show-modal" @click="showModal = true"
                 >Dogue de Bordeaux (French Mastiff)</span
               >
