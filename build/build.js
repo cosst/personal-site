@@ -3,6 +3,7 @@ require('./check-versions')()
 
 process.env.NODE_ENV = 'production'
 
+// import ora from 'ora'
 const ora = require('ora')
 const rm = require('rimraf')
 const path = require('path')

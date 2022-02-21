@@ -7,28 +7,27 @@
       </div>
       <div class="main-container">
         <div class="main-area">
-          <email-title subject="Oops, this page does not exist!" title="404"></email-title>
+          <email-title
+            subject="Oops, this page does not exist!"
+            title="404"
+          ></email-title>
           <div class="main-content">
             <email-header></email-header>
+            <p>Hi friend,</p>
             <p>
-              Hi friend,
+              Uh oh, it looks like the page that you are trying to reach does
+              not exist.
             </p>
+            <p>Please double check the URL and try again.</p>
             <p>
-              Uh oh, it looks like the page that you are trying to reach does not exist.
-            </p>
-            <p>
-              Please double check the URL and try again.
-            </p>
-            <p>
-              If you think you have found a bug or issue with the site, I would very much appreciate it if you'd <router-link to="contact">let me know</router-link> so that I can fix it. :)
+              If you think you have found a bug or issue with the site, I would
+              very much appreciate it if you'd
+              <router-link to="contact">let me know</router-link> so that I can
+              fix it. :)
             </p>
             <site-map></site-map>
-            <p>
-              Cheers,
-            </p>
-            <p>
-              Nate
-            </p>
+            <p>Cheers,</p>
+            <p>Nate</p>
           </div>
         </div>
       </div>
@@ -38,28 +37,37 @@
 </template>
 
 <script>
-import PartialHeader from './partials/PartialHeader'
-import Sidebar from './partials/Sidebar'
-import PartialFooter from './partials/PartialFooter'
-import EmailTitle from './partials/EmailTitle'
-import EmailHeader from './partials/EmailHeader'
-import SiteMap from './partials/SiteMap'
+import PartialHeader from "./partials/PartialHeader";
+import Sidebar from "./partials/Sidebar";
+import PartialFooter from "./partials/PartialFooter";
+import EmailTitle from "./partials/EmailTitle";
+import EmailHeader from "./partials/EmailHeader";
+import SiteMap from "./partials/SiteMap";
 
 export default {
-  name: 'page-404',
-  components: { PartialHeader, Sidebar, PartialFooter, EmailTitle, EmailHeader, SiteMap
+  name: "page-404",
+  components: {
+    PartialHeader,
+    Sidebar,
+    PartialFooter,
+    EmailTitle,
+    EmailHeader,
+    SiteMap,
   },
   metaInfo: {
-    title: '404', // set a title
+    title: "404", // set a title
     meta: [
-      { name: 'description', content: 'The page you are trying to reach does not exist.'}
+      {
+        name: "description",
+        content: "The page you are trying to reach does not exist.",
+      },
     ],
     htmlAttrs: {
-      lang: 'en',
-      amp: undefined // "amp" has no value
-    }
-  }
-}
+      lang: "en",
+      amp: undefined, // "amp" has no value
+    },
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -68,7 +76,7 @@ export default {
   background-color: white;
   display: flex;
   flex-wrap: wrap;
-  font-family: arial,sans-serif;
+  font-family: arial, sans-serif;
   justify-content: center;
   margin: 0;
 }
@@ -89,14 +97,14 @@ export default {
   margin: 0px 30px 0px 10px;
 }
 .main-content a {
-  color: #0000EE;
+  color: #0000ee;
 }
-@media only screen and (max-width: 800px)  {
+@media only screen and (max-width: 800px) {
   .sidebar-toggle {
     display: none;
   }
 }
-@media only screen and (min-width: 801px)  {
+@media only screen and (min-width: 801px) {
   .main {
     margin-top: 112px;
   }

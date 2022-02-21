@@ -4,9 +4,7 @@
       <div class="folder-container">
         <div class="compose">
           <router-link to="contact">
-            <div class="compose-button">
-              CONTACT ME
-            </div>
+            <div class="compose-button">CONTACT ME</div>
           </router-link>
         </div>
         <div class="folders">
@@ -18,18 +16,18 @@
               <li>Drafts</li>
             </ul>
           </div>
-          <div class='nav-menu'>
+          <div class="nav-menu">
             <div class="categories">
               <i class="fas fa-caret-down"></i>&nbsp;&nbsp;Navigate
             </div>
-              <ul>
-                <router-link to="/" exact tag="li">Home</router-link>
-                <router-link to="about" tag="li">About</router-link>
-                <!-- <router-link to="blog" tag="li">Blog</router-link> -->
-                <router-link to="resume" tag="li">Resume</router-link>
-                <router-link to="daphne" tag="li">Daphne</router-link>
-                <router-link to="contact" tag="li">Contact</router-link>
-              </ul>
+            <ul>
+              <router-link to="/" exact tag="li">Home</router-link>
+              <router-link to="about" tag="li">About</router-link>
+              <!-- <router-link to="blog" tag="li">Blog</router-link> -->
+              <router-link to="resume" tag="li">Resume</router-link>
+              <router-link to="daphne" tag="li">Daphne</router-link>
+              <router-link to="contact" tag="li">Contact</router-link>
+            </ul>
           </div>
           <div class="nav-fake">
             <ul>
@@ -44,47 +42,74 @@
               <li><span v-on:click="seen = !seen">Recipes</span></li>
               <li>Sidebench</li>
             </ul>
-            <img v-if="seen" v-on:click="seen = !seen" src="../../assets/cilantro.png" class="cilantro" />
+            <img
+              v-if="seen"
+              v-on:click="seen = !seen"
+              :src="require('../../assets/cilantro.png').default"
+              class="cilantro"
+            />
           </div>
         </div>
       </div>
     </div>
     <div class="chat-box">
       <div class="chat-container">
-        <div class="chat-divider">
-        </div>
+        <div class="chat-divider"></div>
         <div class="chat-friend">
           <div class="chat-icon">
-            <span class="chat-icon-image chat-icon-image-bill"></span>
+            <img
+              class="chat-icon-image"
+              :src="require('../../assets/bill.png').default"
+            />
           </div>
           <div class="chat-text">
-            Bill Murray<br><span class="chat-text-small">bring the manatee plz</span>
-          </div>
-        </div>
-        <div class="chat-friend">
-          <div class="chat-icon">
-            <span class="chat-icon-image chat-icon-image-daphne"></span>
-          </div>
-          <div class="chat-text">
-            Daphne<br><span class="chat-text-small">dinner?</span>
+            Bill Murray<br /><span class="chat-text-small"
+              >bring the manatee plz</span
+            >
           </div>
         </div>
         <div class="chat-friend">
           <div class="chat-icon">
-              <span id="show-modal" @click="showModal = true" class="chat-icon-image chat-icon-image-god"></span>
-              <modal v-if="showModal" @close="showModal = false" img="https://media.giphy.com/media/G3fPad8N68GfS/giphy.gif">
-              </modal>
+            <img
+              class="chat-icon-image"
+              :src="require('../../assets/daphne.jpg').default"
+            />
           </div>
           <div class="chat-text">
-            God<br><span class="chat-text-small"><i class="fas fa-video chat-light-video"></i> You were in a video</span>
+            Daphne<br /><span class="chat-text-small">dinner?</span>
           </div>
         </div>
         <div class="chat-friend">
           <div class="chat-icon">
-            <span class="chat-icon-image chat-icon-image-dory"></span>
+            <img
+              id="show-modal"
+              @click="showModal = true"
+              class="chat-icon-image"
+              :src="require('../../assets/god.jpeg').default"
+            />
+            <modal
+              v-if="showModal"
+              @close="showModal = false"
+              img="https://media.giphy.com/media/G3fPad8N68GfS/giphy.gif"
+            >
+            </modal>
           </div>
           <div class="chat-text">
-            Dory<br><span class="chat-text-small">JUST KEEP SWIMMING</span>
+            God<br /><span class="chat-text-small"
+              ><i class="fas fa-video chat-light-video"></i> You were in a
+              video</span
+            >
+          </div>
+        </div>
+        <div class="chat-friend">
+          <div class="chat-icon">
+            <img
+              class="chat-icon-image"
+              :src="require('../../assets/dory.jpg').default"
+            />
+          </div>
+          <div class="chat-text">
+            Dory<br /><span class="chat-text-small">JUST KEEP SWIMMING</span>
           </div>
         </div>
       </div>
@@ -94,15 +119,15 @@
 
 <script>
 export default {
-  name: 'sidebar',
-  props: ['title'],
+  name: "sidebar",
+  props: ["title"],
   data: function () {
     return {
       seen: false,
-      showModal : false
-    }
-  }
-}
+      showModal: false,
+    };
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -124,7 +149,7 @@ export default {
   text-align: none;
 }
 .chat-divider {
-  box-shadow: 0 -2px 2px -1px rgba(0,0,0,.1);
+  box-shadow: 0 -2px 2px -1px rgba(0, 0, 0, 0.1);
   content: "";
   height: 4px;
   margin-left: 30px;
@@ -156,21 +181,6 @@ export default {
   white-space: nowrap;
   width: 32px;
 }
-.chat-icon-image-bill {
-  background-image: url("../../assets/bill.png")
-}
-
-.chat-icon-image-daphne {
-  background-image: url("../../assets/daphne.jpg")
-}
-
-.chat-icon-image-god {
-  background-image: url("../../assets/god.jpeg")
-}
-
-.chat-icon-image-dory {
-  background-image: url("../../assets/dory.jpg")
-}
 .chat-light-video {
   color: #aaaaaa;
 }
@@ -201,7 +211,7 @@ export default {
 }
 .compose-button {
   background-color: #d14836;
-  background-image: linear-gradient(to bottom,#dd4b39,#d14836);
+  background-image: linear-gradient(to bottom, #dd4b39, #d14836);
   border-color: transparent;
   border-radius: 2px;
   border-style: solid;
@@ -220,9 +230,9 @@ export default {
 }
 .compose-button:hover {
   background-color: #c53727;
-  background-image: linear-gradient(to bottom,#dd4b39,#c53727);
+  background-image: linear-gradient(to bottom, #dd4b39, #c53727);
   border: 1px solid #b0281a;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 .folder-container {
   display: flex;
@@ -247,7 +257,7 @@ export default {
   text-align: left;
 }
 .nav-fake {
-  color: #666A6B;
+  color: #666a6b;
   font-weight: normal;
   margin-top: 10px;
 }

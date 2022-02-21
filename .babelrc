@@ -3,7 +3,7 @@
     [
       "env",
       {
-        "modules": "commonjs",
+        "modules": false,
         "targets": {
           "browsers": [
             "> 1%",
@@ -18,12 +18,6 @@
   "plugins": [
     "transform-vue-jsx",
     "transform-runtime",
-    // [
-    //   "transform-runtime",
-    //   {
-    //     "polyfill": false
-    //   }
-    // ],
     "transform-class-properties",
     "transform-es2015-modules-commonjs"
   ]

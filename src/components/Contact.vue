@@ -60,62 +60,80 @@
 </template>
 
 <script>
-import PartialHeader from './partials/PartialHeader'
-import Sidebar from './partials/Sidebar'
-import PartialFooter from './partials/PartialFooter'
-import EmailTitle from './partials/EmailTitle'
-import EmailHeader from './partials/EmailHeader'
+import PartialHeader from "./partials/PartialHeader";
+import Sidebar from "./partials/Sidebar";
+import PartialFooter from "./partials/PartialFooter";
+import EmailTitle from "./partials/EmailTitle";
+import EmailHeader from "./partials/EmailHeader";
 
 export default {
-  name: 'contact',
-  components: { PartialHeader, Sidebar, PartialFooter, EmailTitle, EmailHeader
+  name: "contact",
+  components: {
+    PartialHeader,
+    Sidebar,
+    PartialFooter,
+    EmailTitle,
+    EmailHeader,
   },
   data: function () {
     return {
       errors: [],
       name: null,
       email: null,
-      message: null
-    }
+      message: null,
+    };
   },
   metaInfo: {
-    title: 'Contact', // set a title
+    title: "Contact", // set a title
     meta: [
-      { name: 'description', content: 'Please send me a message if you would like to discuss consulting, contracting, apprenticeship, or full-time opportunities. Or if you just want to say hi.'},
-      { property: 'og:title', content: 'Contact - Nate Schier'},
-      { property: 'og:description', content: 'Please send me a message if you would like to discuss consulting, contracting, apprenticeship, or full-time opportunities. Or if you just want to say hi.'},
-      { property: 'og:image', content: 'http://www.nateschier.com/static/oswald.png'},
-      { property: 'og:url', content: 'http://www.nateschier.com/contact'}
+      {
+        name: "description",
+        content:
+          "Please send me a message if you would like to discuss consulting, contracting, apprenticeship, or full-time opportunities. Or if you just want to say hi.",
+      },
+      { property: "og:title", content: "Contact - Nate Schier" },
+      {
+        property: "og:description",
+        content:
+          "Please send me a message if you would like to discuss consulting, contracting, apprenticeship, or full-time opportunities. Or if you just want to say hi.",
+      },
+      {
+        property: "og:image",
+        content: "http://www.nateschier.com/static/oswald.png",
+      },
+      { property: "og:url", content: "http://www.nateschier.com/contact" },
     ],
     htmlAttrs: {
-      lang: 'en',
-      amp: undefined // "amp" has no value
-    }
+      lang: "en",
+      amp: undefined, // "amp" has no value
+    },
   },
   methods: {
-    checkForm: function(e) {
+    checkForm: function (e) {
       if (this.name && this.email && this.message) return true;
       this.errors = [];
       if (!this.name) this.errors.push("Name is required.");
       if (!this.email) this.errors.push("Email is required.");
       if (!this.message) this.errors.push("Message is required.");
       e.preventDefault();
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-input[type=text], input[type=email], textarea {
-  border: 1px solid rgba(0,0,0,0.15);
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 1px solid rgba(0, 0, 0, 0.15);
   font-size: 12.8px;
   margin: 8px 0px;
   padding: 10px;
   width: 100%;
 }
-input[type=submit] {
-  background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+input[type="submit"] {
+  background: -webkit-linear-gradient(top, #4387fd, #4683ea);
   border: 1px solid transparent;
   border-radius: 2px;
   color: white;
@@ -143,7 +161,7 @@ label {
   background-color: white;
   display: flex;
   flex-wrap: wrap;
-  font-family: arial,sans-serif;
+  font-family: arial, sans-serif;
   justify-content: center;
   margin: 0;
 }
@@ -176,7 +194,7 @@ label {
   margin: 0px 30px 0px 10px;
 }
 .main-content a {
-  color: #0000EE;
+  color: #0000ee;
 }
 .submit-error {
   color: red;
@@ -187,15 +205,17 @@ label {
   margin-left: 30px;
   margin-top: 10px;
 }
-@media only screen and (max-width: 800px)  {
-  input[type=text], input[type=email], textarea {
+@media only screen and (max-width: 800px) {
+  input[type="text"],
+  input[type="email"],
+  textarea {
     width: 92%;
   }
   .sidebar-toggle {
     display: none;
   }
 }
-@media only screen and (min-width: 801px)  {
+@media only screen and (min-width: 801px) {
   .main {
     margin-top: 112px;
   }

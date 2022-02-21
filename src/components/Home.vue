@@ -36,33 +36,50 @@
 </template>
 
 <script>
-import PartialHeader from './partials/PartialHeader'
-import Sidebar from './partials/Sidebar'
-import PartialFooter from './partials/PartialFooter'
-import EmailTitle from './partials/EmailTitle'
-import EmailHeader from './partials/EmailHeader'
-import SiteMap from './partials/SiteMap'
+import PartialHeader from "./partials/PartialHeader";
+import Sidebar from "./partials/Sidebar";
+import PartialFooter from "./partials/PartialFooter";
+import EmailTitle from "./partials/EmailTitle";
+import EmailHeader from "./partials/EmailHeader";
+import SiteMap from "./partials/SiteMap";
 
 export default {
-  name: 'home',
-  components: { PartialHeader, Sidebar, PartialFooter, EmailTitle, EmailHeader, SiteMap
+  name: "home",
+  components: {
+    PartialHeader,
+    Sidebar,
+    PartialFooter,
+    EmailTitle,
+    EmailHeader,
+    SiteMap,
   },
   metaInfo: {
-    title: 'Nate Schier', // set a title
+    title: "Nate Schier", // set a title
     titleTemplate: null,
     meta: [
-      { name: 'description', content: 'I am a full stack engineer and consultant with a primary focus on JavaScript.'},
-      { property: 'og:title', content: 'Nate Schier'},
-      { property: 'og:description', content: 'I am a full stack engineer and consultant with a primary focus on JavaScript.'},
-      { property: 'og:image', content: 'http://www.nateschier.com/static/oswald.png'},
-      { property: 'og:url', content: 'http://www.nateschier.com/'}
+      {
+        name: "description",
+        content:
+          "I am a full stack engineer and consultant with a primary focus on JavaScript.",
+      },
+      { property: "og:title", content: "Nate Schier" },
+      {
+        property: "og:description",
+        content:
+          "I am a full stack engineer and consultant with a primary focus on JavaScript.",
+      },
+      {
+        property: "og:image",
+        content: "http://www.nateschier.com/static/oswald.png",
+      },
+      { property: "og:url", content: "http://www.nateschier.com/" },
     ],
     htmlAttrs: {
-      lang: 'en',
-      amp: undefined // "amp" has no value
-    }
-  }
-}
+      lang: "en",
+      amp: undefined, // "amp" has no value
+    },
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -84,13 +101,13 @@ export default {
   margin: 0px 30px 0px 10px;
 }
 .main-content a {
-  color: #0000EE;
+  color: #0000ee;
 }
 .container {
   background-color: white;
   display: flex;
   flex-wrap: wrap;
-  font-family: arial,sans-serif;
+  font-family: arial, sans-serif;
   justify-content: center;
   margin: 0;
 }
@@ -116,7 +133,7 @@ export default {
 .page-text {
   padding: 50px;
 }
-@media only screen and (max-width: 800px)  {
+@media only screen and (max-width: 800px) {
   .sidebar-toggle {
     display: none;
   }
@@ -140,7 +157,7 @@ a {
   color: black;
   text-decoration: none;
 }
-@media only screen and (max-width: 900px)  {
+@media only screen and (max-width: 900px) {
   .page {
     border: none;
     margin-top: 0px;
@@ -150,17 +167,17 @@ a {
     padding: 20px;
   }
 }
-@media only screen and (max-width: 460px)  {
+@media only screen and (max-width: 460px) {
   h1 {
     font-size: 45px;
   }
 }
-@media only screen and (max-width: 400px)  {
+@media only screen and (max-width: 400px) {
   h1 {
     font-size: 40px;
   }
 }
-@media only screen and (min-width: 801px)  {
+@media only screen and (min-width: 801px) {
   .main {
     margin-top: 112px;
   }
