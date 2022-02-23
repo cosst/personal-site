@@ -13,7 +13,7 @@
           ></email-title>
           <div class="main-content">
             <email-header></email-header>
-            <p>Hi friend,</p>
+            <greeting></greeting>
             <p>
               So while I'm sure you want to learn about me and all, I know the
               real reason you're here is to see Daphne (AKA Daph, Doodle, Bubba,
@@ -145,7 +145,7 @@
               <router-link to="contact">send me a message</router-link> and I'd
               be happy to oblige.
             </p>
-            <p>Cheers,</p>
+            <sign-off></sign-off>
             <p>Nate</p>
           </div>
         </div>
@@ -161,6 +161,8 @@ import Sidebar from "./partials/Sidebar";
 import PartialFooter from "./partials/PartialFooter";
 import EmailTitle from "./partials/EmailTitle";
 import EmailHeader from "./partials/EmailHeader";
+import Greeting from "./partials/Greeting";
+import SignOff from "./partials/SignOff";
 
 export default {
   name: "daphne",
@@ -170,6 +172,8 @@ export default {
     PartialFooter,
     EmailTitle,
     EmailHeader,
+    Greeting,
+    SignOff,
   },
   data: function () {
     return {
@@ -215,6 +219,8 @@ export default {
   margin: 0;
 }
 .daphne-image {
+  display: block;
+  margin-bottom: 0.5rem;
   max-width: 600px;
   width: 100%;
 }

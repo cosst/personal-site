@@ -10,15 +10,11 @@
           <email-title subject="What can I help you with?" title="Contact"></email-title>
           <div class="main-content">
             <email-header></email-header>
+            <greeting></greeting>
             <p>
-              Hi friend,
+              Please send me a message below and I will get back to you shortly.
             </p>
-            <p>
-              Please send me a message below and I will get back to you shortly. The more info you can provide the better!
-            </p>
-            <p>
-              Thanks,
-            </p>
+            <sign-off></sign-off>
             <p>
               Nate
             </p>
@@ -65,6 +61,8 @@ import Sidebar from "./partials/Sidebar";
 import PartialFooter from "./partials/PartialFooter";
 import EmailTitle from "./partials/EmailTitle";
 import EmailHeader from "./partials/EmailHeader";
+import Greeting from "./partials/Greeting";
+import SignOff from "./partials/SignOff";
 
 export default {
   name: "contact",
@@ -74,6 +72,8 @@ export default {
     PartialFooter,
     EmailTitle,
     EmailHeader,
+    Greeting,
+    SignOff,
   },
   data: function () {
     return {

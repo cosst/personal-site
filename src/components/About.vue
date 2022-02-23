@@ -13,10 +13,11 @@
           ></email-title>
           <div class="main-content">
             <email-header></email-header>
-            <p>Hi friend,</p>
+            <greeting></greeting>
             <p>
-              I am a full stack engineer and consultant with a primary focus on
-              JavaScript. If you would like to explore working with me, please
+              I am a full stack engineer, consultant and lifelong technologist.
+              I currently work as a Senior Software Engineer at Eventbrite. If
+              you would like to explore working with me, please
               <router-link to="contact">send me a message</router-link>.
             </p>
             <p>
@@ -28,7 +29,7 @@
                 >website</a
               >
               (please excuse the dead image links) back in 2005, my path to
-              working as a developer is a bit more recent.
+              working as an engineer is a bit more recent.
             </p>
             <p>
               After graduating from Pomona College in sunny SoCal, living in
@@ -43,6 +44,20 @@
               world of code in July of 2017.
             </p>
             <p>
+              I planned and implemented my own personal "dev bootcamp", and in
+              2018 I joined
+              <a href="https://www.toneden.io" target="_blank">ToneDen</a> as
+              the first full-time non-founding engineer. In 2020
+              <a
+                href="https://www.eventbrite.com/blog/eventbrite-acquires-toneden/"
+                target="_blank"
+                >ToneDen was acquired by Eventbrite</a
+              >, where we have helped build out
+              <a href="https://www.eventbrite.com/boost/" target="_blank"
+                >Eventbrite Boost</a
+              >, an all-in-one marketing platform for event creators.
+            </p>
+            <!-- <p>
               Since then I have been working as a contractor while continually
               studying, learning, and most importantly building things to grow
               my own full-stack development skillset. Thus far I have focused
@@ -51,14 +66,20 @@
               completed Harvard's CS50 course, and I plan to continue with other
               online CS courses to build a solid computational foundation and
               explore new fields.
-            </p>
+            </p> -->
             <p>
               Technologies that I am currently comfortable with include
-              JavaScript, React, Node, React Native, Vue, Python, Express,
-              MongoDB, RethinkDB, REST APIs, Mocha, Chai, webpack, Babel, Git,
-              Yarn/npm, Heroku, and Firebase.
+              JavaScript, React, Node, Python, AWS, Terraform, PostgreSQL,
+              DynamoDB, React Native, Vue, Express, MongoDB, Mocha, Chai,
+              webpack, Babel, Git, and Yarn/npm/pnpm.
             </p>
             <p>
+              During my time at ToneDen and Eventbrite I have also developed
+              expertise working with a number of APIs, including but not limited
+              to Facebook, Stripe, Spotify, Apple Podcasts, Twitter, and
+              SoundCloud.
+            </p>
+            <!-- <p>
               While not everything I have done thus far can be shared publicly,
               a few projects of mine are listed below. You are welcome to view
               <a href="https://github.com/cosst" target="_blank"
@@ -91,14 +112,13 @@
                   entertaining way
                 </li>
               </ul>
-            </div>
+            </div> -->
             <p>
-              I am interested in contract, consulting, apprenticeship and
-              potentially full-time opportunities. If you are interested in
-              chatting, please
+              At present I am primarily interested in consulting and contract
+              opportunities. If you would like to chat please
               <router-link to="contact">shoot me a message</router-link>.
             </p>
-            <p>Cheers,</p>
+            <sign-off></sign-off>
             <p>Nate</p>
           </div>
         </div>
@@ -114,6 +134,8 @@ import Sidebar from "./partials/Sidebar";
 import PartialFooter from "./partials/PartialFooter";
 import EmailTitle from "./partials/EmailTitle";
 import EmailHeader from "./partials/EmailHeader";
+import Greeting from "./partials/Greeting";
+import SignOff from "./partials/SignOff";
 
 export default {
   name: "about",
@@ -123,6 +145,8 @@ export default {
     PartialFooter,
     EmailTitle,
     EmailHeader,
+    Greeting,
+    SignOff,
   },
   metaInfo: {
     title: "About", // set a title
