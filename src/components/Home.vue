@@ -10,20 +10,13 @@
           <email-title subject="Welcome to my site!" title="Home"></email-title>
           <div class="main-content">
             <email-header></email-header>
-            <p>
-              Hi friend,
-            </p>
-            <p>
-              Welcome to my website!
-            </p>
+            <greeting></greeting>
             <p>
               I am a full stack engineer and consultant based in Connecticut. Please have a look around to get to know me a bit better, and if you're interested in working together or want to say hi you can <router-link to="contact">send me a message</router-link>.
             </p>
-            <site-map></site-map>
+              <site-map></site-map>
             </p>
-            <p>
-              Cheers,
-            </p>
+            <sign-off></sign-off>
             <p>
               Nate
             </p>
@@ -42,6 +35,8 @@ import PartialFooter from "./partials/PartialFooter";
 import EmailTitle from "./partials/EmailTitle";
 import EmailHeader from "./partials/EmailHeader";
 import SiteMap from "./partials/SiteMap";
+import Greeting from "./partials/Greeting";
+import SignOff from "./partials/SignOff";
 
 export default {
   name: "home",
@@ -51,7 +46,9 @@ export default {
     PartialFooter,
     EmailTitle,
     EmailHeader,
+    Greeting,
     SiteMap,
+    SignOff,
   },
   metaInfo: {
     title: "Nate Schier", // set a title

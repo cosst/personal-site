@@ -13,7 +13,7 @@
           ></email-title>
           <div class="main-content">
             <email-header></email-header>
-            <p>Hi friend,</p>
+            <greeting></greeting>
             <p>
               Uh oh, it looks like the page that you are trying to reach does
               not exist.
@@ -26,7 +26,7 @@
               fix it. :)
             </p>
             <site-map></site-map>
-            <p>Cheers,</p>
+            <sign-off></sign-off>
             <p>Nate</p>
           </div>
         </div>
@@ -43,6 +43,8 @@ import PartialFooter from "./partials/PartialFooter";
 import EmailTitle from "./partials/EmailTitle";
 import EmailHeader from "./partials/EmailHeader";
 import SiteMap from "./partials/SiteMap";
+import Greeting from "./partials/Greeting";
+import SignOff from "./partials/SignOff";
 
 export default {
   name: "page-404",
@@ -53,6 +55,8 @@ export default {
     EmailTitle,
     EmailHeader,
     SiteMap,
+    Greeting,
+    SignOff,
   },
   metaInfo: {
     title: "404", // set a title

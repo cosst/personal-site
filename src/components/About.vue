@@ -13,11 +13,11 @@
           ></email-title>
           <div class="main-content">
             <email-header></email-header>
-            <p>Hi friend,</p>
+            <greeting></greeting>
             <p>
-              I am a full stack engineer, consultant and lifelong technolgist. I
-              currently work as a Senior Software Engineer at Eventbrite. If you
-              would like to explore working with me, please
+              I am a full stack engineer, consultant and lifelong technologist.
+              I currently work as a Senior Software Engineer at Eventbrite. If
+              you would like to explore working with me, please
               <router-link to="contact">send me a message</router-link>.
             </p>
             <p>
@@ -118,7 +118,7 @@
               opportunities. If you would like to chat please
               <router-link to="contact">shoot me a message</router-link>.
             </p>
-            <p>Cheers,</p>
+            <sign-off></sign-off>
             <p>Nate</p>
           </div>
         </div>
@@ -134,6 +134,8 @@ import Sidebar from "./partials/Sidebar";
 import PartialFooter from "./partials/PartialFooter";
 import EmailTitle from "./partials/EmailTitle";
 import EmailHeader from "./partials/EmailHeader";
+import Greeting from "./partials/Greeting";
+import SignOff from "./partials/SignOff";
 
 export default {
   name: "about",
@@ -143,6 +145,8 @@ export default {
     PartialFooter,
     EmailTitle,
     EmailHeader,
+    Greeting,
+    SignOff,
   },
   metaInfo: {
     title: "About", // set a title
